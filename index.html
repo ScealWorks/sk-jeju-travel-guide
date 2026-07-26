@@ -806,6 +806,72 @@
     margin: -10px 0 18px;
     font-style: italic;
   }
+  .dest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 6px;
+  }
+  .dest-card {
+    cursor: pointer;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    text-align: left;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    display: block;
+  }
+  .dest-card:hover, .dest-card:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(28,43,74,0.15);
+  }
+  .dest-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+  }
+  .dest-card-noimg {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    background: var(--cream);
+  }
+  .dest-card-body {
+    padding: 12px 14px;
+  }
+  .dest-card-body h3 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    color: var(--navy);
+  }
+  .dest-card-body p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+  .back-to-destinations {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0 14px;
+    font: inherit;
+    font-size: 0.85rem;
+    color: var(--navy);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .back-to-destinations:hover { color: var(--navy-light); }
   .map-dot:hover circle, .map-dot:focus circle {
     stroke: var(--gold);
     stroke-width: 3;
@@ -936,13 +1002,7 @@
   <button data-tab="before">Before You Go</button>
   <button data-tab="culture">Culture &amp; Etiquette</button>
   <button data-tab="funfacts">Fun Facts</button>
-  <button data-tab="seoul">Seoul</button>
-  <button data-tab="dmz">DMZ</button>
-  <button data-tab="gyeongju">Gyeongju</button>
-  <button data-tab="busan">Busan</button>
-  <button data-tab="jeonju">Jeonju</button>
-  <button data-tab="jeju">Jeju Island</button>
-  <button data-tab="coastalgems">Hidden Coastal Gems</button>
+  <button data-tab="destinations">Destinations</button>
   <button data-tab="drama">K-Drama Spots</button>
   <button data-tab="kpop">K-Pop</button>
   <button data-tab="heritage">Arts &amp; Heritage</button>
@@ -1483,7 +1543,66 @@
   </section>
 
   <!-- SEOUL -->
+  <!-- DESTINATIONS HUB -->
+  <section class="tab-panel" id="panel-destinations">
+    <h2 class="section-title">🗺️ Destinations</h2>
+    <p class="section-sub">Seven places, each with its own tab worth of detail. Pick one to dive in, there's a link back here at the top of each.</p>
+
+    <div class="dest-grid">
+      <button type="button" class="dest-card" data-goto="seoul">
+        <img src="https://images.unsplash.com/photo-1624176193860-dd7866e5a8aa?auto=format&fit=crop&w=600&q=65" alt="Seoul">
+        <div class="dest-card-body">
+          <h3>Seoul</h3>
+          <p>Palaces, markets, and the capital's own rhythm.</p>
+        </div>
+      </button>
+      <button type="button" class="dest-card" data-goto="busan">
+        <img src="https://images.unsplash.com/photo-1700277841528-3bb0633675f1?auto=format&fit=crop&w=600&q=65" alt="Busan">
+        <div class="dest-card-body">
+          <h3>Busan</h3>
+          <p>Korea's second city, coastal and laid-back.</p>
+        </div>
+      </button>
+      <button type="button" class="dest-card" data-goto="jeju">
+        <img src="https://images.unsplash.com/photo-1628411848698-e3b3249a272a?auto=format&fit=crop&w=600&q=65" alt="Jeju Island">
+        <div class="dest-card-body">
+          <h3>Jeju Island</h3>
+          <p>Volcanic coastline, a flight from the mainland.</p>
+        </div>
+      </button>
+      <button type="button" class="dest-card" data-goto="dmz">
+        <div class="dest-card-noimg">🪖</div>
+        <div class="dest-card-body">
+          <h3>DMZ</h3>
+          <p>A day trip from Seoul into the border zone.</p>
+        </div>
+      </button>
+      <button type="button" class="dest-card" data-goto="gyeongju">
+        <img src="https://images.unsplash.com/photo-1726859134607-bc9f46492fc2?auto=format&fit=crop&w=600&q=65" alt="Gyeongju">
+        <div class="dest-card-body">
+          <h3>Gyeongju</h3>
+          <p>The old Silla capital, dense with UNESCO sites.</p>
+        </div>
+      </button>
+      <button type="button" class="dest-card" data-goto="jeonju">
+        <img src="https://images.unsplash.com/photo-1653230675261-fe00bde32c8e?auto=format&fit=crop&w=600&q=65" alt="Jeonju">
+        <div class="dest-card-body">
+          <h3>Jeonju</h3>
+          <p>UNESCO City of Gastronomy, hanok village heart.</p>
+        </div>
+      </button>
+      <button type="button" class="dest-card" data-goto="coastalgems">
+        <img src="https://images.unsplash.com/photo-1758620566191-625a5c19ab44?auto=format&fit=crop&w=600&q=65" alt="Hidden Coastal Gems">
+        <div class="dest-card-body">
+          <h3>Hidden Coastal Gems</h3>
+          <p>Two quiet towns worth the extra effort to reach.</p>
+        </div>
+      </button>
+    </div>
+  </section>
+
   <section class="tab-panel" id="panel-seoul">
+    <button type="button" class="back-to-destinations" data-goto="destinations">&larr; All destinations</button>
     <h2 class="section-title">🏙️ Seoul</h2>
     <p class="section-sub">3-4 nights is a reasonable first cut. The Han River splits the city: north holds the palaces and old town, south holds Gangnam and the modern business districts. The subway connects both easily.</p>
 
@@ -1585,6 +1704,7 @@
 
   <!-- DMZ -->
   <section class="tab-panel" id="panel-dmz">
+    <button type="button" class="back-to-destinations" data-goto="destinations">&larr; All destinations</button>
     <h2 class="section-title">🪖 DMZ Day Trip</h2>
     <p class="section-sub">A day trip from Seoul, most tours leave from Hongdae or Myeongdong around 7am and run 6-7 hours.</p>
 
@@ -1608,6 +1728,7 @@
 
   <!-- GYEONGJU -->
   <section class="tab-panel" id="panel-gyeongju">
+    <button type="button" class="back-to-destinations" data-goto="destinations">&larr; All destinations</button>
     <h2 class="section-title">🏛️ Gyeongju</h2>
     <p class="section-sub">The old Silla capital, dense with UNESCO sites. Reachable by KTX from Seoul (to Singyeongju station) or as a stop between Seoul and Busan.</p>
     <img class="hero-img" src="https://images.unsplash.com/photo-1726859134607-bc9f46492fc2?auto=format&fit=crop&w=1200&q=70" alt="Grass-covered Silla burial mounds at Daereungwon in Gyeongju" loading="lazy">
@@ -1652,6 +1773,7 @@
 
   <!-- BUSAN -->
   <section class="tab-panel" id="panel-busan">
+    <button type="button" class="back-to-destinations" data-goto="destinations">&larr; All destinations</button>
     <h2 class="section-title">🌊 Busan</h2>
     <p class="section-sub">Korea's second city, coastal, more laid-back than Seoul. 2 nights is enough to hit the highlights.</p>
 
@@ -1714,6 +1836,7 @@
 
   <!-- JEONJU -->
   <section class="tab-panel" id="panel-jeonju">
+    <button type="button" class="back-to-destinations" data-goto="destinations">&larr; All destinations</button>
     <h2 class="section-title">🏯 Jeonju</h2>
     <p class="section-sub">Korea's UNESCO City of Gastronomy and the historic home of hanbok craftsmanship. Usually a standalone trip from Seoul, or added onto the Gyeongju/Busan leg if you have an extra day or two.</p>
     <img class="hero-img" src="https://images.unsplash.com/photo-1653230675261-fe00bde32c8e?auto=format&fit=crop&w=1200&q=70" alt="Aerial view of the traditional tiled rooftops of Jeonju Hanok Village" loading="lazy">
@@ -1752,6 +1875,7 @@
 
   <!-- JEJU -->
   <section class="tab-panel" id="panel-jeju">
+    <button type="button" class="back-to-destinations" data-goto="destinations">&larr; All destinations</button>
     <h2 class="section-title">🌋 Jeju Island</h2>
     <p class="section-sub">Volcanic island off the south coast, fly-only from the mainland (about an hour from Seoul or Busan). 3-4 nights lets you cover east, west and the centre without rushing.</p>
 
@@ -1860,6 +1984,7 @@
 
   <!-- HIDDEN COASTAL GEMS -->
   <section class="tab-panel" id="panel-coastalgems">
+    <button type="button" class="back-to-destinations" data-goto="destinations">&larr; All destinations</button>
     <h2 class="section-title">🧭 Hidden Coastal Gems</h2>
     <p class="section-sub">Two quiet coastal towns worth the detour once the main circuit (Busan, Jeju) feels like it's had enough crowds. Both take more effort to reach than anything else in this guide, and reward it precisely because most visitors don't bother.</p>
     <img class="hero-img" src="https://images.unsplash.com/photo-1758620566191-625a5c19ab44?auto=format&fit=crop&w=1200&q=70" alt="Quiet Korean coastal town with a bridge over calm water and hills behind" loading="lazy">
@@ -2468,10 +2593,23 @@
   var panels = document.querySelectorAll('.tab-panel');
   var currentFilter = 'all';
 
+  // Sub-tabs grouped under the Destinations hub tab, plus a label lookup
+  // that doesn't depend on every panel having its own nav button (the
+  // hub tab route removed 7 individual nav buttons but kept their panels).
+  var DESTINATION_TABS = ['seoul', 'dmz', 'gyeongju', 'busan', 'jeonju', 'jeju', 'coastalgems'];
+  var TAB_LABELS = {
+    overview: 'Overview', before: 'Before You Go', culture: 'Culture & Etiquette', funfacts: 'Fun Facts',
+    destinations: 'Destinations', seoul: 'Seoul', dmz: 'DMZ', gyeongju: 'Gyeongju', busan: 'Busan',
+    jeonju: 'Jeonju', jeju: 'Jeju Island', coastalgems: 'Hidden Coastal Gems', drama: 'K-Drama Spots',
+    kpop: 'K-Pop', heritage: 'Arts & Heritage', shopping: 'Shopping', nightlife: 'Entertainment & Nightlife',
+    phrases: 'Phrases', emergency: 'Emergency & Health', transit: 'Getting Around', plan: 'Plan Your Trip'
+  };
+
   function activate(tabId) {
+    var navId = DESTINATION_TABS.indexOf(tabId) !== -1 ? 'destinations' : tabId;
     var activeBtn = null;
     buttons.forEach(function (b) {
-      var isMatch = b.getAttribute('data-tab') === tabId;
+      var isMatch = b.getAttribute('data-tab') === navId;
       b.classList.toggle('active', isMatch);
       if (isMatch) activeBtn = b;
     });
@@ -2487,6 +2625,15 @@
   buttons.forEach(function (btn) {
     btn.addEventListener('click', function () {
       activate(btn.getAttribute('data-tab'));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // Destination hub cards and "back to Destinations" links share the
+  // same data-goto attribute and the same activate() routing.
+  document.querySelectorAll('[data-goto]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      activate(el.getAttribute('data-goto'));
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
@@ -2542,7 +2689,7 @@
   var searchIndex = [];
   panels.forEach(function (panel) {
     var tabId = panel.id.replace('panel-', '');
-    var tabLabel = document.querySelector('nav.tabs button[data-tab="' + tabId + '"]').textContent;
+    var tabLabel = TAB_LABELS[tabId] || tabId;
     var items = panel.querySelectorAll('.card, .app-card');
     items.forEach(function (el) {
       var titleEl = el.querySelector('h3, h4');
