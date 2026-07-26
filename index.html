@@ -964,6 +964,38 @@
   footer strong { color: var(--ink); }
 
   a { color: var(--teal); }
+
+  .anchor-link-btn {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 0 4px;
+    font-size: 0.72em;
+    line-height: 1;
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    cursor: pointer;
+    opacity: 0.5;
+    vertical-align: middle;
+    transition: opacity 0.15s ease, color 0.15s ease;
+  }
+  .anchor-link-btn:hover,
+  .anchor-link-btn:focus-visible {
+    opacity: 1;
+    color: var(--navy-light);
+  }
+  .anchor-link-btn.copied {
+    opacity: 1;
+    color: var(--practical);
+  }
+  h3:target,
+  .anchor-highlight {
+    animation: anchorFlash 1.6s ease;
+  }
+  @keyframes anchorFlash {
+    0% { background-color: rgba(198,12,48,0.14); }
+    100% { background-color: transparent; }
+  }
 </style>
 </head>
 <body>
@@ -3282,6 +3314,119 @@
       renderItinerary();
     });
   }
+
+  // ---- Section anchors: id + copy-link icon on every card heading, plus a hash router ----
+  (function () {
+    var usedIds = {};
+
+    function slugify(text) {
+      return text.toLowerCase()
+        .replace(/[^\x00-\x7f]/g, '')
+        .replace(/&/g, ' and ')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function uniqueId(base) {
+      if (!base) base = 'section';
+      var id = base;
+      var n = 2;
+      while (usedIds[id] || document.getElementById(id)) {
+        id = base + '-' + n;
+        n++;
+      }
+      usedIds[id] = true;
+      return id;
+    }
+
+    function headingText(h3) {
+      var clone = h3.cloneNode(true);
+      var badge = clone.querySelector('.badge');
+      if (badge && badge.parentNode) badge.parentNode.removeChild(badge);
+      return clone.textContent.trim();
+    }
+
+    function legacyCopy(text, cb) {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        if (cb) cb();
+      } catch (e) { /* nothing sensible left to do */ }
+    }
+
+    function copyToClipboard(text, cb) {
+      if (window.navigator && window.navigator.clipboard && window.navigator.clipboard.writeText) {
+        window.navigator.clipboard.writeText(text).then(cb).catch(function () {
+          legacyCopy(text, cb);
+        });
+      } else {
+        legacyCopy(text, cb);
+      }
+    }
+
+    var headings = document.querySelectorAll('.tab-panel .card > h3');
+    headings.forEach(function (h3) {
+      var id = uniqueId(slugify(headingText(h3)));
+      h3.id = id;
+
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'anchor-link-btn';
+      btn.setAttribute('aria-label', 'Copy link to this section');
+      btn.textContent = '\uD83D\uDD17';
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var url = window.location.origin + window.location.pathname + '#' + id;
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, '', '#' + id);
+        }
+        copyToClipboard(url, function () {
+          var original = btn.textContent;
+          btn.textContent = '\u2713';
+          btn.classList.add('copied');
+          setTimeout(function () {
+            btn.textContent = original;
+            btn.classList.remove('copied');
+          }, 1500);
+        });
+      });
+      h3.appendChild(btn);
+    });
+
+    function goToHash(hash) {
+      if (!hash) return;
+      var id = hash.replace(/^#/, '');
+      if (!id) return;
+      var target;
+      try {
+        target = document.getElementById(id);
+      } catch (e) { return; }
+      if (!target) return;
+      var panel = target.closest ? target.closest('.tab-panel') : null;
+      if (panel) {
+        activate(panel.id.replace(/^panel-/, ''));
+      }
+      setTimeout(function () {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.classList.add('anchor-highlight');
+        setTimeout(function () { target.classList.remove('anchor-highlight'); }, 1600);
+      }, 60);
+    }
+
+    if (window.location.hash) {
+      goToHash(window.location.hash);
+    }
+    window.addEventListener('hashchange', function () {
+      goToHash(window.location.hash);
+    });
+  })();
 })();
 </script>
 
