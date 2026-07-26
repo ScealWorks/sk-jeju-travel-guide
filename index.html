@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>South Korea &amp; Jeju Island Travel Guide</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI2M2MGMzMCIvPgogIDxwYXRoIGQ9Ik01MCwwIGE1MCw1MCAwIDAsMCAwLDEwMCBhMjUsMjUgMCAwLDEgMCwtNTAgYTI1LDI1IDAgMCwwIDAsLTUwIFoiIGZpbGw9IiMwMDM0NzgiLz4KPC9zdmc+Cg==">
 <style>
   :root {
     --navy: #003478;
@@ -789,6 +790,22 @@
 
   .map-dot { cursor: pointer; outline: none; }
   .map-dot circle { transition: stroke 0.15s, stroke-width 0.15s; }
+
+  .hero-img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+    display: block;
+  }
+  .hero-img-caption {
+    font-size: 0.72rem;
+    color: var(--ink-soft);
+    margin: -10px 0 18px;
+    font-style: italic;
+  }
   .map-dot:hover circle, .map-dot:focus circle {
     stroke: var(--gold);
     stroke-width: 3;
@@ -918,6 +935,7 @@
   <button data-tab="overview" class="active">Overview</button>
   <button data-tab="before">Before You Go</button>
   <button data-tab="culture">Culture &amp; Etiquette</button>
+  <button data-tab="funfacts">Fun Facts</button>
   <button data-tab="seoul">Seoul</button>
   <button data-tab="dmz">DMZ</button>
   <button data-tab="gyeongju">Gyeongju</button>
@@ -966,6 +984,9 @@
   <section class="tab-panel active" id="panel-overview">
     <h2 class="section-title">🧭 Overview</h2>
     <p class="section-sub">How this guide is laid out, and a shape for the trip if you did the fuller route.</p>
+
+    <img class="hero-img" src="https://images.unsplash.com/photo-1762267616547-6d6cd4adabc3?auto=format&fit=crop&w=1200&q=70" alt="Visitors in hanbok at Gyeongbokgung Palace, Seoul" loading="lazy">
+    <p class="hero-img-caption">Gyeongbokgung Palace, Seoul, hanbok rental in full swing. Photo via Unsplash.</p>
 
     <div class="callout">Written from a UK traveller's perspective: prices convert to GBP, entry rules assume a UK passport, and comparisons (TfL, Tesco Express, Network Rail and the like) are UK reference points. Everything else, apps, etiquette, sights, transport, works whichever passport you're travelling on.</div>
 
@@ -1409,6 +1430,7 @@
         <p><strong>Valentine's Day</strong> (14 February): women give men chocolate.</p>
         <p><strong>White Day</strong> (14 March): men reciprocate with sweets, "white" for purity, the custom actually originated in Japan and caught on here.</p>
         <p><strong>Black Day</strong> (14 April): for anyone who got nothing on either date, they mark it by eating jajangmyeon (black bean noodles) together.</p>
+        <p><strong>Pepero Day</strong> (11 November) is the best-known day outside Korea, and it isn't part of the 14th-of-the-month set: friends and couples swap Pepero, a chocolate-dipped biscuit stick, because 11/11 written out looks like four sticks stood in a row. It's genuinely mainstream, not a K-pop fan thing, though its official status traces to Lotte (the maker of Pepero) formally naming the day in 1997 rather than to any older tradition, marketing that worked so well it became a real fixture of the calendar.</p>
         <p>It continues on through the year in steadily more obscure, mostly commercial versions. Mostly a bit of fun rather than deep tradition, but it turns up constantly in K-dramas, so it's genuinely useful cultural context rather than trivia.</p>
       </div>
       <div class="card">
@@ -1426,10 +1448,41 @@
     </div>
   </section>
 
+  <!-- FUN FACTS -->
+  <section class="tab-panel" id="panel-funfacts">
+    <h2 class="section-title">💡 Fun Facts</h2>
+    <p class="section-sub">The bits worth knowing that don't need a whole card to themselves, plus a couple of proper explainers. The fuller stories behind several of these live in Culture &amp; Etiquette if you want the whole picture.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3><span class="badge culture">Culture</span>Korean age got simpler in 2023</h3>
+        <p>Korea used to run three different age systems at once: "Korean age" (a baby is 1 at birth, everyone gains a year together on New Year's Day), a separate "counting age" used for drinking and smoking laws, and the international system doctors already used. Since 28 June 2023, a new law made international age the single legal standard, so most Koreans are now officially one or two years younger than they'd have said a few years earlier. Older relatives may still quote Korean age out of habit, so don't be surprised if you hear a number that doesn't match someone's passport.</p>
+      </div>
+      <div class="card">
+        <h3><span class="badge culture">Culture</span>Blood type: Korea's other horoscope</h3>
+        <p>Ask someone's blood type in Korea and you might get a little more than medical information back. Blood type personality theory, imported from Japan in the 1970s, treats A, B, O and AB as rough personality profiles the way Western culture treats star signs, and a Gallup Korea poll found roughly six in ten adults still put some stock in it. It's mostly taken lightly these days (TV shows that leaned on it too heavily were pulled from 2008 onward after complaints it fed real discrimination), but it comes up often enough in K-dramas and casual conversation that it's worth recognising when it does.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Quick-fire facts</h3>
+        <ul class="plain-list">
+          <li><strong>Pepero Day (11 November):</strong> friends and couples swap chocolate-dipped biscuit sticks because 11/11 looks like four sticks in a row. Genuinely mainstream, officially named by Lotte in 1997 (full story in Culture &amp; Etiquette).</li>
+          <li><strong>No fourth floor:</strong> the number 4 sounds like the word for "death", so many lifts skip straight to "F".</li>
+          <li><strong>Never write a name in red ink:</strong> it's historically how the deceased were recorded, and it still reads as a bad omen to many Koreans today.</li>
+          <li><strong>Noraebang made the dictionary:</strong> the word joined the Oxford English Dictionary in December 2024, alongside dalgona, hyung and tteokbokki.</li>
+          <li><strong>Tattoos and bathhouses:</strong> tattooing was only legalised as a licensed profession in Korea in 2025, and most large jjimjilbangs now allow visible tattoos as a result, smaller or more traditional ones may still not.</li>
+          <li><strong>A whole calendar of couple days:</strong> Valentine's (14 Feb), White Day (14 Mar) and Black Day (14 Apr) run one after another, and the pattern keeps going through the year in steadily more obscure, mostly commercial versions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- SEOUL -->
   <section class="tab-panel" id="panel-seoul">
     <h2 class="section-title">🏙️ Seoul</h2>
     <p class="section-sub">3-4 nights is a reasonable first cut. The Han River splits the city: north holds the palaces and old town, south holds Gangnam and the modern business districts. The subway connects both easily.</p>
+
+    <img class="hero-img" src="https://images.unsplash.com/photo-1624176193860-dd7866e5a8aa?auto=format&fit=crop&w=1200&q=70" alt="A street food stall spread of Korean skewers, tempura and pajeon" loading="lazy">
+    <p class="hero-img-caption">The street food spread you'll see at markets across the city. Photo via Unsplash.</p>
 
     <div class="map-wrap">
       <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
@@ -1594,6 +1647,9 @@
     <h2 class="section-title">🌊 Busan</h2>
     <p class="section-sub">Korea's second city, coastal, more laid-back than Seoul. 2 nights is enough to hit the highlights.</p>
 
+    <img class="hero-img" src="https://images.unsplash.com/photo-1700277841528-3bb0633675f1?auto=format&fit=crop&w=1200&q=70" alt="Haeundae Beach skyline in Busan" loading="lazy">
+    <p class="hero-img-caption">Haeundae Beach, where the skyline meets the sand. Photo via Unsplash.</p>
+
     <div class="map-wrap">
       <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="600" height="220" fill="#f3efe4" rx="12"/>
@@ -1666,6 +1722,11 @@
         <p>Jeonju is where Korean hanbok craftsmanship actually comes from, so rental here (and the wider hanbok culture around the village) has more depth to it than the Seoul palace version, worth doing here specifically if the craft itself is what interests you rather than just the photo.</p>
       </div>
       <div class="card">
+        <h3><span class="badge culture">Culture</span>Hanji papermaking: Jeonju's other craft</h3>
+        <p>Alongside hanbok, Jeonju is the historic home of <strong>hanji</strong>, paper hand-made from mulberry bark, strong enough to be woven, lacquered or used as flooring in traditional buildings, not just written on. The Jeonju Hanji Museum and the nearby Hanji Industry Support Center run short hands-on sessions, making your own sheet, a lamp, or a paper doll, an easy pairing with a Hanok Village day since it's a five-to-ten-minute taxi from the core sights.</p>
+        <p>If Jeonju isn't on the itinerary, Seoul's Bukchon studios (Gahoe-dong Hanji Studio and similar) offer the same craft closer to the city, shorter sessions of an hour or two covering hanji lamps, dolls or frames.</p>
+      </div>
+      <div class="card">
         <h3><span class="badge food">Food</span>Jeonju bibimbap &amp; the Bibimbap and Food Alley</h3>
         <p>This is the dish's spiritual home, <strong>Jeonju-style bibimbap</strong> uses more ingredients, better rice and a raw egg yolk on top, genuinely different from Seoul's version.</p>
         <p>The <strong>Bibimbap and Food Alley</strong> in the hanok village is full of specialists, alongside kongnamul gukbap (bean sprout soup) stalls and street snacks.</p>
@@ -1683,6 +1744,9 @@
   <section class="tab-panel" id="panel-jeju">
     <h2 class="section-title">🌋 Jeju Island</h2>
     <p class="section-sub">Volcanic island off the south coast, fly-only from the mainland (about an hour from Seoul or Busan). 3-4 nights lets you cover east, west and the centre without rushing.</p>
+
+    <img class="hero-img" src="https://images.unsplash.com/photo-1628411848698-e3b3249a272a?auto=format&fit=crop&w=1200&q=70" alt="A green volcanic cliff and coastal path on Jeju Island" loading="lazy">
+    <p class="hero-img-caption">Jeju's volcanic coastline, the terrain behind most of the island's headline sights. Photo via Unsplash.</p>
 
     <div class="map-wrap">
       <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
@@ -1754,6 +1818,18 @@
         <p>The <strong>Jeju Haenyeo Museum</strong> (Haenyeo Museum, in Gujwa-eup on the island's northeast side) is the place to see the history and equipment up close, and several coastal villages, including around Seongsan, have haenyeo-run seafood restaurants and stalls selling the day's catch straight off the boat.</p>
       </div>
       <div class="card">
+        <h3><span class="badge sight">Sight</span>Dochidol Ranch: alpacas up close</h3>
+        <p>A working alpaca farm in Aewol, on the island's north coast, where alpacas roam a fairly open field rather than pens, alongside ponies, sheep, goats and rabbits. Feeding is part of the entry, hand a handful of hay to an alpaca and it'll come straight over, and the on-site Experience House lends out ponchos (the traditional Peruvian garment, since that's where alpacas actually come from) free for photos.</p>
+      </div>
+      <div class="card">
+        <h3><span class="badge sight">Sight</span>Jeju Leports Land: go-karts, zipline, paintball</h3>
+        <p>The island's biggest recreation complex and Korea's largest go-kart centre, all on one site: go-karting, a zipline, a water sled and paintball. For thrill-seekers this is the on-par answer to the water parks already in this guide, one stop rather than several bookings, and it doesn't need the mainland detour Everland or Lotte World would.</p>
+      </div>
+      <div class="card">
+        <h3><span class="badge culture">Culture</span>Jeju horse riding: the native pony</h3>
+        <p>Jeju has its own distinct horse breed, the <strong>Jeju pony</strong> (jorangmal), small, sturdy and bred for the island's terrain rather than a generic riding-school animal. <strong>Jeju Horse Park</strong> runs graded track lengths from a short 1.2km loop up to a 13km outing, while <strong>Steel Flower Ranch</strong> and similar operators offer beach riding specifically, worth seeking out over an inland arena if the coastline is the whole point for you. Beginners and children are well catered for, instructors walk alongside for the shorter courses.</p>
+      </div>
+      <div class="card">
         <h3><span class="badge food">Food</span>What to eat</h3>
         <ul class="plain-list">
           <li><strong>Heuk-dwaeji</strong>: Jeju black pork, grilled.</li>
@@ -1820,6 +1896,7 @@
       <div class="card">
         <h3><span class="badge drama">K-Drama</span>Nami Island (day trip from Seoul)</h3>
         <p>The <strong>Winter Sonata</strong> filming location, reached by a short boat from Gapyeong Wharf, itself about an hour from Seoul. Look for the First Kiss glass sequoia bridge and Cheongdam Lantern Lane. Often combined with Petite France on the same day tour. Best outside peak summer heat, it's also a well-known winter destination with its own festival.</p>
+        <p>For thrill-seekers: the <strong>Nami Skyline Zipwire</strong> swoops 940m across the river to the island at around 56km/h, and Gapyeong itself is home to one of the cheapest bungee jumps in the world (roughly ₩40,000), both easy add-ons to the same day trip if the boat ride alone isn't enough adrenaline.</p>
       </div>
       <div class="card">
         <h3><span class="badge drama">K-Drama</span>Gamcheon Culture Village, Busan</h3>
@@ -1920,6 +1997,11 @@
       <div class="card">
         <h3><span class="badge culture">Culture</span>Hanbok, beyond the rental photo</h3>
         <p>If hanbok is a genuine interest rather than a one-off photo, Jeonju (its own tab in this guide) is where the craft actually comes from, hanbok culture there runs deeper than the Seoul palace rental shops. In Seoul itself, Insadong and Bukchon have proper tailoring ateliers doing custom and traditional-technique hanbok work, worth a look even just to see the craft up close.</p>
+      </div>
+      <div class="card">
+        <h3><span class="badge culture">Culture</span>Icheon Ceramics Village: celadon and buncheong, hands-on</h3>
+        <p><strong>Icheon</strong>, about an hour southeast of Seoul, is a UNESCO City of Crafts and Folk Art built around dozens of working kilns and studios producing celadon (cheongja) and buncheong ware. Walk in and you'll see potters actually throwing and glazing, not a staged demonstration, and most studios run hands-on sessions where you shape and glaze your own piece, fired and ready to collect or ship on afterwards.</p>
+        <p>This is the genuine equivalent of a jade or silk factory visit elsewhere in Asia: watch the craft, try it yourself, buy directly from the person who made it rather than a shop mark-up. Worth a full day trip from Seoul rather than trying to bolt it onto something else.</p>
       </div>
       <div class="card">
         <h3><span class="badge sight">Sight</span>Huwon, the Secret Garden (Changdeokgung)</h3>
@@ -2353,7 +2435,7 @@
 </main>
 
 <footer>
-  <strong>Researched and compiled with AI assistance from current travel sources. Content last reviewed: 24 July 2026.</strong> May contain errors, outdated details or omissions, and is provided for general trip-planning purposes only, not official travel, legal, medical or safety advice. Entry rules, prices, medication rules and tour availability change, so verify anything time-sensitive against an official or current source before relying on it, especially K-ETA status, JSA/DMZ access and Hallasan's reservation cutoffs. Provided as-is, with no guarantee of accuracy and no liability accepted for errors, omissions or decisions made using this guide.
+  <strong>Researched and compiled with AI assistance from current travel sources. Content last reviewed: 26 July 2026.</strong> May contain errors, outdated details or omissions, and is provided for general trip-planning purposes only, not official travel, legal, medical or safety advice. Entry rules, prices, medication rules and tour availability change, so verify anything time-sensitive against an official or current source before relying on it, especially K-ETA status, JSA/DMZ access and Hallasan's reservation cutoffs. Provided as-is, with no guarantee of accuracy and no liability accepted for errors, omissions or decisions made using this guide.
 </footer>
 
 <button type="button" id="jumpTabsBtn" class="jump-tabs-btn" aria-label="Jump to top and switch section">&uarr; Tabs</button>
