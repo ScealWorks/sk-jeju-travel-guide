@@ -200,10 +200,17 @@
   .badge.emergency { background: var(--emergency); }
   .badge.gem { background: var(--gem); }
 
-  .card.thumb {
+  .card.thumb .thumb-header {
     display: flex;
+    align-items: center;
     gap: 14px;
-    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .card.thumb .thumb-header h3 {
+    margin: 0;
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .card.thumb .thumb-icon {
@@ -216,8 +223,6 @@
   }
 
   .card.thumb .thumb-icon svg { width: 100%; height: 100%; display: block; }
-
-  .card.thumb .thumb-body { flex: 1 1 auto; min-width: 0; }
 
   @media (max-width: 480px) {
     .card.thumb .thumb-icon { width: 48px; height: 48px; }
@@ -1448,7 +1453,8 @@
     </div>
 
     <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <rect x="10" y="30" width="48" height="28" fill="#b8860b"/>
@@ -1456,8 +1462,10 @@
 <rect x="28" y="40" width="12" height="18" fill="#8a6608"/>
         </svg>
       </div>
+        <h3><span class="badge gem">Hidden Gem</span>Korean convenience stores are their own attraction</h3>
+      </div>
       <div class="thumb-body">
-      <h3><span class="badge gem">Hidden Gem</span>Korean convenience stores are their own attraction</h3>
+              
       <p>Worth treating as a genuine experience, not just a backup option, they're a different category of shop entirely to a UK Tesco Express. <strong>CU</strong>, <strong>GS25</strong>, <strong>7-Eleven</strong> and <strong>E-Mart 24</strong> (open 24/7, 365 days a year) function as tiny kitchens: microwaves and hot-water dispensers at a dedicated noodle station let you cook instant ramyeon on the spot, CU's "Ramyeon Library" concept stores stock over 225 varieties.</p>
       <p><strong>Dosirak</strong> (lunchbox meals, rice with multiple sides, pickles, a soft-boiled egg, fishcake) are a proper meal for ₩4,000-6,000, not a sad sandwich equivalent. Most branches have a few seats to eat in, some stock alcohol and let you drink it there. New products drop every Tuesday and Thursday, so the shelves genuinely change week to week.</p>
       <p>Korea has the highest convenience store density in the world, about one for every 950 people, prices are fixed nationwide, no tourist markup anywhere. Worth popping into more than one chain even if you're not buying anything, the differences between CU and GS25's food ranges are a small rabbit hole of their own.</p>
@@ -1465,11 +1473,13 @@
       <p><strong>The terrace rule:</strong> rural branches especially tend to have plastic tables and umbrellas set up outside, and it's completely normal to sit and eat or drink there, a genuinely cheap alternative to a bar.</p>
       <p><strong>1+1 and 2+1 promotions:</strong> check the shelf tags, "1+1" means buy one, get a second free, "2+1" means buy two, get a third. Mixing flavours within the same brand is usually fine.</p>
       <p>At the ramyeon station specifically, the rubbish bins are split three ways: liquid/food waste, recyclable plastic, and paper packaging, clean up after yourself the same way the general rubbish-separation rule (Daily-life practicalities, above) describes.</p>
-    </div>
+    
+      </div>
     </div>
 
     <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <ellipse cx="34" cy="40" rx="22" ry="16" fill="#b8860b"/>
@@ -1477,13 +1487,16 @@
 <circle cx="50" cy="36" r="3" fill="#8a6608"/>
         </svg>
       </div>
+        <h3><span class="badge gem">Hidden Gem</span>Budget travel: free &amp; cheap culture</h3>
+      </div>
       <div class="thumb-body">
-      <h3><span class="badge gem">Hidden Gem</span>Budget travel: free &amp; cheap culture</h3>
+              
       <p>From April 2026, <strong>"Culture Day"</strong> (discounted or free entry to museums, cinemas and performances nationwide) runs every Wednesday rather than just the last Wednesday of the month. Free palace admission is being phased in on top of that: Deoksugung from August 2026, Changdeokgung and Changgyeonggung from October 2026, with Changgyeonggung and Deoksugung open until 9pm on their free Wednesdays. Gyeongbokgung's free-Wednesday date hasn't been set yet, still under review over crowding concerns, so don't assume it's included until it's confirmed nearer the time.</p>
       <p>The <strong>National Museum of Modern and Contemporary Art</strong> adds free entry until 9pm on Wednesdays and Saturdays too.</p>
       <p>May adds a nationwide <strong>"Museum and Art Gallery Week"</strong> with further free access.</p>
       <p>Combine with the hanbok-for-free-palace-entry trick (Seoul tab) and a genuinely cultural day can cost almost nothing.</p>
-    </div>
+    
+      </div>
     </div>
 
     <div class="card">
@@ -1564,7 +1577,8 @@
         <p>These days it's pure ritual: a shared little performance that marks the start of a meal and sets the mood, not something that changes what's in the glass. If a table gets a soju tornado going, you'll usually see everyone genuinely enjoying the small ceremony of it, worth a smile even if the drink itself isn't your thing.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <ellipse cx="34" cy="42" rx="24" ry="10" fill="#e0623f"/>
@@ -1572,8 +1586,10 @@
 <path d="M20 26 Q22 34 18 38 M34 22 Q36 32 32 36 M48 26 Q50 34 46 38" stroke="#a83f27" stroke-width="2" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Iconic dishes</h3>
+      </div>
+      <div class="thumb-body">
+                
         <ul class="plain-list">
           <li><strong>Kimchi</strong>: fermented, seasoned cabbage, turns up at almost every meal as a side dish, it's the one most people have heard of, but it's worth trying a few regional or seasonal versions rather than assuming it's all the same.</li>
           <li><strong>Kimbap</strong>: seaweed rice rolls, a full packed-lunch meal in a roll.</li>
@@ -1584,10 +1600,12 @@
           <li><strong>Korean fried chicken</strong>: double-fried, thinner and crunchier than the UK version, often ordered alongside beer as a pairing called chimaek. It's also the reigning star of <strong>mukbang</strong> and "ASMR chicken" videos, that thin, crackly crust is exactly what makes the crunch so satisfying on camera, not a different dish, just the same chicken with a microphone pointed at it. Mukbang itself is a Korean-coined term (from meokda, "to eat", and bangsong, "broadcast") for the eating-show genre, it made it into the Oxford English Dictionary in 2021, several years ahead of noraebang (see Entertainment &amp; Nightlife).</li>
           <li><strong>Korean-style pizza</strong>: a genuinely different animal from Italian or UK pizza, built around a sweet-savoury contrast, think corn, sweet potato, bulgogi, potato wedges and even honey alongside the cheese. <strong>Mr. Pizza</strong> is the pioneer and best-known chain, famous for a sweet-potato-mousse-stuffed crust, worth ordering once purely for the novelty (see Entertainment &amp; Nightlife and Before You Go for how easily it gets delivered almost anywhere).</li>
         </ul>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <line x1="14" y1="46" x2="54" y2="46" stroke="#e0623f" stroke-width="4" stroke-linecap="round"/>
@@ -1597,8 +1615,10 @@
 <path d="M14 46 L10 20" stroke="#5b6472" stroke-width="3" stroke-linecap="round"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Street food: the trinity and beyond</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Every pojangmacha (street cart) and bunsik stall in the country sells the same core trio side by side, order any one and you'll be offered the other two.</p>
         <ul class="plain-list">
           <li><strong>Tteokbokki</strong>: chewy rice cakes in spicy gochujang sauce (see the Seoul tab).</li>
@@ -1610,10 +1630,12 @@
           <li><strong>Bungeoppang</strong>: fish-shaped pastry filled with sweet red bean, another cold-weather street snack. Its cousin <strong>gyeran-ppang</strong> swaps the red bean for a whole baked egg, same stalls, same season, different filling.</li>
           <li><strong>Kkwabaegi</strong>: a twisted, sugar-glazed dough doughnut, cheap, chewy and sold everywhere, easy to miss between the bigger names on this list but worth grabbing if you spot one.</li>
         </ul>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <circle cx="34" cy="36" r="22" fill="#e0623f"/>
@@ -1622,16 +1644,20 @@
 <rect x="57" y="16" width="3" height="20" fill="#a83f27"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Where to eat: worth seeking out</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Egg Drop</strong> is a Korean sandwich chain (200+ locations) built entirely around a soft scrambled-egg filling in a toasted brioche bun with their own egg sauce, cheap (roughly ₩2,900-4,400) and genuinely popular rather than just a tourist thing, its profile shot up after appearing in the drama Hospital Playlist.</p>
         <p><strong>Isaac Toast</strong> is the older, equally beloved sibling, a Korean-style toasted sandwich chain found everywhere, worth comparing the two.</p>
         <div class="traveller-note"><span class="tn-label">📝 Traveller's Note</span><p>I've wanted to try Egg Drop since seeing it on The Korean Englishman, in the episode where Josh and Ollie took a group of boys from Fulham Boys School there. It's not about finding the best sandwich in Seoul, it's one of those small, ordinary things that feels very Korean, and worth doing on day one.</p></div>
         <p>For a proper sit-down meal, <strong>Gwangjang Market</strong> and <strong>Mangwon Market</strong> (Seoul tab) and <strong>Jagalchi Market</strong> (Busan tab) are already covered elsewhere in this guide, they're as much a food destination as a sight.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <rect x="4" y="30" width="14" height="26" fill="#e0623f"/>
@@ -1640,8 +1666,10 @@
 <rect x="52" y="24" width="12" height="32" fill="#a83f27"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Regional food alleys (Meokja Golmok)</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Beyond single standout restaurants, several Korean cities have a whole street built around one dish, a <strong>meokja golmok</strong> ("food alley"). Worth seeking out over a generic restaurant if you want the properly local version of a dish rather than the tourist-friendly one.</p>
         <table class="compare">
           <tr><th>Alley</th><th>Location</th><th>Speciality</th></tr>
@@ -1653,6 +1681,7 @@
         </table>
         <p><strong>Anjirang Gopchang Alley, Daegu:</strong> makchang and gopchang (grilled tripe and small intestines), seasoned lightly and charcoal-grilled right at the table until crisp. Over 50 family-run stalls line a single street, loud, smoky and properly local, well-known among Korean food lovers but largely overlooked by Western tour groups.</p>
         <p><strong>Bujeon Tteokgalbi Alley, Busan:</strong> tucked inside and around Bujeon Market (Bujeon station, exit 1), a cluster of stalls serving tteokgalbi, grilled patties of minced beef short rib, sometimes described to visitors as a Korean hamburger. Open early (market hours run from around 4am), it's as much a breakfast stop as a lunch one.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -1675,7 +1704,8 @@
         <p><strong>Rooftop and river-view cafés</strong> trade on the view as much as the coffee, expect to pay a premium for a window seat.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M16 26 L50 26 L46 54 L20 54 Z" fill="#b8860b"/>
@@ -1683,14 +1713,17 @@
 <path d="M24 18 Q28 12 24 8 M34 18 Q38 12 34 8 M44 18 Q48 12 44 8" stroke="#8a6608" stroke-width="2" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>A few cafés worth the detour</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Café Comma</strong>: a book café with soaring ceilings and shelves stacked floor to ceiling, genuinely built for readers rather than just photographed by them.</p>
         <p><strong>King's Cross Café</strong> (Hongdae): four Harry Potter-themed floors, including a Hogwarts-common-room floor and house-themed rooms, full commitment to the bit rather than a few props on a shelf.</p>
         <p><strong>View 376</strong>: sits directly on the Han River with floor-to-ceiling windows, one of the most unobstructed river views of any café in the city.</p>
         <p><strong>Green Mile Coffee</strong>: small and modern, overlooking Bukchon Hanok Village, a quieter way to take in the view than the palace crowds below.</p>
         <p><strong>House of Vinyl</strong> (Mangwon): a house-like vinyl café built around a record player and speaker set-up, request a song and it plays on LP if the shelf has it, digital if it doesn't. Vintage-living-room interior, floor-to-ceiling windows, worth it for music lovers specifically.</p>
         <p><strong>Perception</strong> (near Hapjeong): an award-winning specialty coffee shop, hand-drip V60 and Chemex from a rotating world bean selection, a quieter alternative to Hongdae proper while still an easy walk from it.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -1699,7 +1732,8 @@
         <p>Stationery has its own cult following here, distinct from the bookshops. <strong>Artbox</strong> and <strong>Morning Glory</strong> are the cute-and-affordable chains aimed at students and browsers, expect character goods, washi tape and diary-decorating supplies alongside the basics. <strong>Alpha</strong>'s Namdaemun flagship is the serious end of the same hobby, four floors split by type (office supplies, art and craft, paper, files), aimed at people who take their desk setup seriously rather than tourists, worth it if that's you.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <rect x="8" y="14" width="52" height="6" fill="#8a6608"/>
@@ -1711,9 +1745,12 @@
 <rect x="8" y="46" width="52" height="6" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Starfield Library, Coex</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A genuinely free public library inside the Coex Mall in Gangnam, two-storey shelving stretching floor to ceiling, reading tables scattered through the open atrium, and one of the most photographed interior spaces in Seoul, purely as a piece of architecture rather than a bookshop to buy from. Worth combining with a Coex wander generally (see K-Pop, for its merch pop-ups) since it sits inside the same complex.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -1940,7 +1977,8 @@
 
     <div class="grid-2">
       <div class="card thumb" id="loc-bukchon">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M6 40 L34 18 L62 40 Z" fill="#145f60"/>
@@ -1950,13 +1988,17 @@
 <rect x="14" y="60" width="40" height="4" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Bukchon Hanok Village &amp; the palaces</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Gyeongbokgung</strong>, <strong>Changdeokgung</strong> and <strong>Changgyeonggung</strong> palaces sit within about 15 minutes' walk of Bukchon's traditional hanok streets. Go early to beat both crowds and the heat.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M33 4 L38 4 L38 20 L33 20 Z" fill="#145f60"/>
@@ -1966,10 +2008,13 @@
 <rect x="19" y="60" width="30" height="4" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>N Seoul Tower</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Seoul's best-known viewpoint, perched atop Namsan Mountain and reachable by cable car, a short hike, or bus straight to the base. The observation deck gives a full 360° view of the city, best around sunset when it turns into the night skyline.</p>
         <p>The deck fencing is covered in thousands of padlocks, couples and visitors write a message and lock it to the railing, a tradition often called the "locks of love". It's also a recurring K-drama filming location, see K-Drama Spots for specific scenes.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -1978,7 +2023,8 @@
         <p>Rental shops cluster around Gyeongbokgung Station and the palace's main entrance: a standard 4-hour rental runs roughly ₩15,000-25,000, full-day ₩25,000-30,000, premium/designer sets and couple sets cost more, hair styling is usually a small add-on. Most shops include free locker storage for your own clothes. Worth doing on a clear day since the photos are the whole point.</p>
       </div>
       <div class="card thumb" id="loc-myeongdong">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <path d="M4 26 L64 26 L58 14 L10 14 Z" fill="#a83f27"/>
@@ -1988,9 +2034,12 @@
 <rect x="44" y="32" width="8" height="20" fill="#e0623f"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Myeongdong</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Seoul's main shopping district doubles as a street food strip, tteokbokki, fish cake skewers, hotteok in colder months. Central and easy to reach, good first stop.</p>
+      
       </div>
     </div>
       <div class="card" id="loc-ikseondong">
@@ -2003,7 +2052,8 @@
         <p>University-area energy: live music, indie cafés, late-night crowd. Best in the evening rather than the morning.</p>
       </div>
       <div class="card thumb" id="loc-gangnam">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <rect x="8" y="30" width="10" height="30" fill="#1f8a8c"/>
@@ -2012,13 +2062,17 @@
 <rect x="50" y="12" width="10" height="48" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Gangnam</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Modern Seoul: upscale shopping, fine dining, nightlife. Worth a visit for contrast with the old town, even if you're not there to shop.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <path d="M4 26 L64 26 L58 14 L10 14 Z" fill="#a83f27"/>
@@ -2028,9 +2082,12 @@
 <rect x="44" y="32" width="8" height="20" fill="#e0623f"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Gwangjang Market</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Seoul's oldest traditional market. Try bindaetteok (mung bean pancake), mayak gimbap (small sesame rice rolls) and yukhoe (seasoned raw beef) from stalls some families have run for decades. If it feels too touristy, Mangwon Market is the local-leaning alternative.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -2039,7 +2096,8 @@
         <p>See the Getting Around tab for line colours, fares and where to find the live map.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M14 44 Q10 24 34 20 Q58 24 54 44 Q34 58 14 44 Z" fill="#b8860b"/>
@@ -2047,14 +2105,18 @@
 <circle cx="40" cy="38" r="3" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Majang-dong Meat Market</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Korea's largest meat market, modern, clean facilities, hanwoo beef (Korea's native cattle, marbling on par with the best wagyu) is the speciality.</p>
         <p>Pick your cut at street level, then the shop sends you upstairs to a restaurant in the same building to grill it yourselves, a charcoal-grilling fee of around ₩7,000 a head on top of what you paid for the meat. A proper local food experience, not a tourist recreation of one.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M16 36 Q34 56 52 36 L48 44 Q34 58 20 44 Z" fill="#8a6608"/>
@@ -2062,36 +2124,47 @@
 <rect x="42" y="10" width="6" height="20" fill="#8a6608" transform="rotate(30 45 20)"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Yangnyeongsi Herbal Medicine Market</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Korea's largest traditional medicine market, over 800 hanbang (traditional Korean medicine) shops and clinics clustered around Jegi-dong Station, Line 1 Exit 2.</p>
         <p>The Seoul K-Medi Center inside runs interactive exhibits on the history and science behind hanbang, plus hands-on and personalised wellness programmes if you want to actually try something rather than just look. Genuinely sensory, ginseng, dried herbs and roots by the sackful, and a completely different pace to the rest of the city.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M12 52 Q20 20 46 26 Q40 36 22 42 Q32 46 32 54" stroke="#145f60" stroke-width="4" fill="none" stroke-linecap="round"/>
 <path d="M0 56 Q17 48 34 56 T68 56 V68 H0 Z" fill="#1f8a8c"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Caribbean Bay (Everland, Yongin)</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>One of Asia's biggest waterparks, indoor and outdoor sections so it partly runs year-round, about an hour from Seoul next to Everland theme park. The Mega Storm slide drops from 37m. In summer 2026 (3 July-17 August) it doubles as an open-air music festival with K-Pop and EDM stages, worth timing a visit around if that appeals, or avoiding if you'd rather have it quieter.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M12 52 Q20 20 46 26 Q40 36 22 42 Q32 46 32 54" stroke="#145f60" stroke-width="4" fill="none" stroke-linecap="round"/>
 <path d="M0 56 Q17 48 34 56 T68 56 V68 H0 Z" fill="#1f8a8c"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Vivaldi Park Ocean World (Hongcheon)</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>The other big one, roughly the size of 14 football pitches, holds up to 18,000 people. About 1.5-2 hours from Seoul in Gangwon-do, part of a larger resort with ski slopes and golf alongside it. A full day out rather than a quick add-on, factor in the travel time.</p>
+      
       </div>
     </div>
     </div>
@@ -2106,7 +2179,8 @@
     <p class="hero-img-caption">Ribbons left at Imjingak by families with relatives across the border. Photo via Unsplash.</p>
 
     <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <rect x="28" y="18" width="12" height="30" fill="#145f60"/>
@@ -2116,11 +2190,14 @@
 <rect x="42" y="52" width="6" height="10" fill="#145f60"/>
         </svg>
       </div>
+        <h3><span class="badge sight">Sight</span>What's included</h3>
+      </div>
       <div class="thumb-body">
-      <h3><span class="badge sight">Sight</span>What's included</h3>
+              
       <p>Standard tours cover the <strong>Dora Observatory</strong> and the <strong>Third Tunnel</strong> (a tunnel dug toward Seoul, discovered in 1978).</p>
       <p>Some include the <strong>JSA</strong> (Joint Security Area) at Panmunjom, the only spot where North and South Korean soldiers stand face to face, described by many as more affecting in person than expected.</p>
-    </div>
+    
+      </div>
     </div>
     <div class="grid-2">
       <div class="card">
@@ -2145,7 +2222,8 @@
 
     <div class="grid-2">
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M34 6 L47 18 L21 18 Z" fill="#145f60"/>
@@ -2154,15 +2232,19 @@
 <rect x="30" y="40" width="8" height="20" fill="#1f8a8c"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Bulguksa Temple &amp; Seokguram Grotto</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Both UNESCO World Heritage sites and the headline reason to come.</p>
         <p><strong>Bulguksa</strong> is the temple complex.</p>
         <p><strong>Seokguram</strong> is a hillside grotto shrine with a granite Buddha, connected to Bulguksa by a short bus or taxi ride.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <ellipse cx="34" cy="58" rx="18" ry="4" fill="#145f60"/>
@@ -2170,26 +2252,34 @@
 <rect x="26" y="16" width="16" height="8" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Cheomseongdae Observatory</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>The oldest surviving astronomical observatory in Asia, built under Queen Seondeok. Small, striking, easy to combine with a walk through the tomb complex nearby.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <ellipse cx="20" cy="50" rx="16" ry="12" fill="#1f8a8c"/>
 <ellipse cx="46" cy="46" rx="20" ry="16" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Daereungwon Tomb Complex</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Grassy burial mounds of Silla royalty right in the middle of the city, including Cheonmachong, one of the few tombs you can walk inside.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <rect x="0" y="46" width="68" height="22" fill="#145f60"/>
@@ -2198,14 +2288,18 @@
 <rect x="26" y="34" width="12" height="10" fill="#1f8a8c"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Donggung Palace &amp; Wolji Pond</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A Silla-era palace and pond complex built as a secondary palace and banquet hall, now Gyeongju's best-known night sight. The reconstructed pavilions sit right at the water's edge, and their reflection in Wolji Pond is the reason people come after dark rather than during the day.</p>
         <p>Illuminated nightly, it's a short walk from Cheomseongdae Observatory and easy to combine with an evening stroll through the tomb complex once the heat of the day has passed.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <circle cx="50" cy="14" r="7" fill="#f2c14e"/>
@@ -2213,14 +2307,18 @@
 <path d="M28 56 L40 22 L52 56 Z" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Gyerim Forest night walk</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A thick, centuries-old forest of zelkova and willow trees right in central Gyeongju, its own quiet legend attached (said to be where the Silla-era Kim clan's founder was discovered as an infant). Free to enter, small enough to walk in 15-20 minutes.</p>
         <p>After dark the whole route lights up in purple, orange and warm yellow, past Cheomseongdae Observatory and the illuminated burial mounds, finishing with a five-minute walk on to Woljeonggyo Bridge for the nightscape view. String it together with Donggung Palace &amp; Wolji Pond (above) for one continuous evening walk rather than treating them as separate stops.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <circle cx="34" cy="34" r="24" fill="#b8860b"/>
@@ -2229,14 +2327,18 @@
 <path d="M22 44 Q34 54 46 44" stroke="#8a6608" stroke-width="3" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Andong Hahoe Folk Village</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A preserved clan village about an hour from Gyeongju, UNESCO-listed, still genuinely lived in rather than reconstructed for visitors. Confucian academies and folk traditions, including the Hahoe mask dance, carry on as living practice, not a museum piece.</p>
         <p>Worth a half-day add-on if you're already spending a few days around Gyeongju, rather than a dedicated trip in its own right.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M0 20 Q17 12 34 20 T68 20" stroke="#b8860b" stroke-width="5" fill="none"/>
@@ -2245,10 +2347,13 @@
 <path d="M0 62 Q17 54 34 62 T68 62" stroke="#8a6608" stroke-width="5" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Boseong Green Tea Fields</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Terraced emerald hills in South Jeolla province, a different scale and setting from Jeju's O'Sulloc plantation (see the Jeju tab), with a quiet tea-tasting session available among the rows.</p>
         <p>Worth being honest about the geography though: it's on the opposite side of the country from Gyeongju, a standalone day rather than a side trip, better folded into a broader Jeolla-region itinerary than tacked onto this leg.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -2290,7 +2395,8 @@
 
     <div class="grid-2">
       <div class="card thumb" id="loc-haeundae">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <circle cx="50" cy="16" r="8" fill="#f2c14e"/>
@@ -2299,13 +2405,17 @@
 <path d="M20 26 L34 20 L48 26 Z" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Haeundae Beach</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Korea's most famous beach, a 1.5km crescent backed by high-rises. More of a city-beach vibe than a quiet escape, good for an afternoon.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M6 20 L62 20" stroke="#8a6608" stroke-width="3"/>
@@ -2313,12 +2423,15 @@
 <path d="M18 46 L50 46" stroke="#8a6608" stroke-width="4"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Haeundae Blueline Sky Capsule</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A retro, brightly coloured four-seat private cabin running along an elevated monorail at walking pace (about 5km/h) along the cliffside near Haeundae, unobstructed panoramic ocean views the whole way.</p>
         <p><strong>Route:</strong> book the <strong>Mipo to Cheongsapo</strong> direction specifically, that keeps your capsule on the outer track closest to the ocean. The reverse direction runs on the inner track, with the view partly blocked by passing cabins.</p>
         <p><strong>Timing:</strong> aim for a slot roughly 30 minutes before sunset for the best light as the sun drops into the sea.</p>
         <p><strong>Booking:</strong> tickets sell out weeks in advance. Book online via the official <a href="https://www.bluelinepark.com/eng/" target="_blank" rel="noopener">Haeundae Blueline Park</a> site the moment your dates are confirmed, walk-up tickets on weekends are almost non-existent.</p>
+      
       </div>
     </div>
       <div class="card" id="loc-gamcheon">
@@ -2326,7 +2439,8 @@
         <p>Pastel houses terraced up a hillside, once a refugee settlement, now murals, small galleries and cafés. Arrive before 10am on a weekday for good light and fewer crowds. Pick up the stamp-trail map at the entrance and wander off the main path.</p>
       </div>
       <div class="card thumb" id="loc-jagalchi">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <path d="M8 34 Q30 14 56 34 Q30 54 8 34 Z" fill="#e0623f"/>
@@ -2334,23 +2448,30 @@
 <circle cx="18" cy="30" r="2.5" fill="#a83f27"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Jagalchi Fish Market</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Korea's largest seafood market. Pick a live fish downstairs, have it prepared sashimi-style and eat upstairs. Near Jagalchi and Nampo stations.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <ellipse cx="34" cy="44" rx="24" ry="10" fill="#b8860b"/>
 <path d="M14 40 Q24 34 34 40 T54 40" stroke="#8a6608" stroke-width="2" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Choryang Milmyeon Lane</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>The dish:</strong> milmyeon, a cold wheat noodle served in an icy, savoury broth, born after the Korean War when wheat flour from aid supplies replaced the traditional buckwheat.</p>
         <p><strong>The experience:</strong> tucked into an unassuming neighbourhood behind Busan Station, a quieter, more affordable slice of local food history well away from the beach crowds.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -2371,7 +2492,8 @@
 
     <div class="grid-2">
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M6 40 L34 18 L62 40 Z" fill="#145f60"/>
@@ -2381,12 +2503,15 @@
 <rect x="14" y="60" width="40" height="4" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Jeonju Hanok Village</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>One of Korea's most complete traditional hanok neighbourhoods, on a similar scale to Bukchon but with a stronger food-and-craft identity. The core sights, walkable in a day:</p>
         <p><strong>Gyeonggijeon Shrine</strong>: houses a portrait of Yi Seong-gye, the first Joseon king.</p>
         <p><strong>Jeondong Cathedral</strong>.</p>
         <p><strong>Omokdae Pavilion</strong>: panoramic village views.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -2399,7 +2524,8 @@
         <p>If Jeonju isn't on the itinerary, Seoul's Bukchon studios (Gahoe-dong Hanji Studio and similar) offer the same craft closer to the city, shorter sessions of an hour or two covering hanji lamps, dolls or frames.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <ellipse cx="34" cy="44" rx="24" ry="10" fill="#e0623f"/>
@@ -2408,11 +2534,14 @@
 <circle cx="34" cy="42" r="4" fill="#f2c14e"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Jeonju bibimbap &amp; the Bibimbap and Food Alley</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>This is the dish's spiritual home, <strong>Jeonju-style bibimbap</strong> uses more ingredients, better rice and a raw egg yolk on top, genuinely different from Seoul's version.</p>
         <p>The <strong>Bibimbap and Food Alley</strong> in the hanok village is full of specialists, alongside kongnamul gukbap (bean sprout soup) stalls and street snacks.</p>
         <p><strong>Nambu Market</strong>'s night market is worth it if you're staying over.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -2462,7 +2591,8 @@
 
     <div class="grid-2">
       <div class="card thumb" id="loc-seongsan">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <circle cx="48" cy="16" r="9" fill="#f2c14e"/>
@@ -2470,13 +2600,17 @@
 <path d="M0 60 L68 60 L68 68 L0 68 Z" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Seongsan Ilchulbong (Sunrise Peak)</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A 180m volcanic tuff cone, UNESCO-listed, famous for sunrise views. The climb to the top takes about 30 minutes and suits most fitness levels.</p>
+      
       </div>
     </div>
       <div class="card thumb" id="loc-hallasan">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M0 54 L16 28 L28 42 L40 18 L52 38 L68 54 Z" fill="#1f8a8c"/>
@@ -2484,13 +2618,17 @@
 <path d="M0 60 L68 60 L68 68 L0 68 Z" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Hallasan</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>South Korea's tallest mountain, a national park and biosphere reserve at the island's centre. Full summit hikes run 8+ hours round trip, there are shorter trail options if that's too much for the day.</p>
+      
       </div>
     </div>
       <div class="card thumb" id="loc-udo">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <ellipse cx="34" cy="52" rx="28" ry="9" fill="#1f8a8c"/>
@@ -2499,13 +2637,17 @@
 <path d="M24 40 L34 30 L44 40 M34 30 L34 40" stroke="#145f60" stroke-width="3" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Udo Island</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A short ferry from near Seongsan Ilchulbong. Small, easy to circle by bike or scooter in a few hours, beaches, coastal viewpoints, quirky cafés.</p>
+      
       </div>
     </div>
       <div class="card thumb" id="loc-seogwipo">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M26 6 L26 44" stroke="#1f8a8c" stroke-width="4" stroke-linecap="round"/>
@@ -2514,16 +2656,20 @@
 <ellipse cx="34" cy="52" rx="24" ry="10" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Seogwipo: waterfalls &amp; coastal cliffs</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Jeju's south-coast city and the base for most of the island's headline natural sights, close enough together for one loop.</p>
         <p><strong>Cheonjiyeon Falls</strong> ("God's Pond") drops through a forested gorge into a pool, no swimming allowed, but an easy, well-paved walk from the car park and worth doing even briefly.</p>
         <p><strong>Jusangjeolli Cliffs</strong>, hexagonal basalt columns formed where an old Hallasan lava flow met the sea and cooled, look almost too geometric to be natural.</p>
         <p><strong>Oedolgae Rock</strong>, a lone 20m volcanic sea stack just offshore, anchors a coastal walking trail through pine forest, budget an hour or two if you want to walk it properly rather than just photograph it from the car park.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <path d="M4 26 L64 26 L58 14 L10 14 Z" fill="#a83f27"/>
@@ -2533,13 +2679,17 @@
 <rect x="44" y="32" width="8" height="20" fill="#e0623f"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Seogwipo Maeil Olle Market</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Open since 1960, Seogwipo's own big market, and a genuine alternative to Jeju City's Dongmun if you're based south. Open daily 7am-9pm, with the food side really coming alive in the evening: around 20 stalls cooking up grilled eel, king crab, black pork steak and black pork yakisoba, alongside the island's seafood and hallabong citrus.</p>
+      
       </div>
     </div>
       <div class="card thumb" id="loc-jejucity">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <line x1="14" y1="46" x2="54" y2="46" stroke="#e0623f" stroke-width="4" stroke-linecap="round"/>
@@ -2549,30 +2699,38 @@
 <path d="M14 46 L10 20" stroke="#5b6472" stroke-width="3" stroke-linecap="round"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Jeju City: Dongmun Market &amp; Black Pork Street</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Most visitors land here, Jeju International Airport is a 15-minute drive from the centre, and it's worth more than a pass-through if you've an evening free before flying out.</p>
         <p><strong>Dongmun Traditional Market</strong>, open since 1945, is the island's largest, by day it's produce, seafood and souvenirs, but from 6pm the Dongmun Night Market takes over with street food stalls and a proper crowd, torch-grilled black pork skewers are what to queue for.</p>
         <p><strong>Black Pork Street</strong> (Geonip-dong), a designated strip of 15-plus specialist restaurants about 10 minutes from the airport, is the sit-down version of the same speciality if a market stall isn't what you're after.</p>
         <p>For a more refined, sit-down version of the same thing, <strong>Poongro Black</strong> in Andeok-myeon (west of Seogwipo) runs a dry-aged black pork tasting menu, its own "Butakase" omakase-style format, well worth the detour if you want the black pork experience done properly once rather than repeatedly at a market stall.</p>
         <p>If it's not black pork you're after, <strong>Subokgangnyeong</strong> near the Provincial Office does its own standout version of tteokgalbi (minced short-rib patties), served in oversized squares, black pork or hanwoo Korean beef. Made to order rather than pre-prepped, so call ahead to reserve.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M6 60 L6 34 Q34 6 62 34 L62 60 Z" fill="#145f60"/>
 <path d="M18 60 L18 38 Q34 22 50 38 L50 60 Z" fill="#1f8a8c"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Manjanggul Cave &amp; lava tubes</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Part of the island's volcanic heritage, walkable lava tube caves. Good option if the weather turns.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <circle cx="50" cy="16" r="8" fill="#f2c14e"/>
@@ -2581,13 +2739,17 @@
 <path d="M20 26 L34 20 L48 26 Z" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Gimnyeong Beach &amp; its fishing village</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A small white-sand beach over lava rock on the northeast coast, close enough to Manjanggul (above) to pair the two in one loop. Walk along the black lava rock and clear water to Gimnyeong Port, a working fishing village where local haenyeo still run a diving programme, and you're on part of a UNESCO Global Geopark geological trail the whole way, so it's a proper walk with something to read as well as a stretch of sand. Budget 2-4 hours to do it without rushing.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M0 54 L16 28 L28 42 L40 18 L52 38 L68 54 Z" fill="#1f8a8c"/>
@@ -2595,18 +2757,22 @@
 <path d="M0 60 L68 60 L68 68 L0 68 Z" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Oreums: Jeju's volcanic cones</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Oreum</strong> is Jeju dialect for a parasitic volcanic cone, a small satellite crater scattered around Hallasan rather than the main peak itself. There are over 360 of them across the island, formed by the same eruptions that shaped Jeju roughly two million years ago, and climbing one is one of the most distinctly Jeju things you can do, quieter and far less crowded than the headline sights.</p>
         <p>Most are free to enter, unstaffed and open any time, no booking needed. Best light is early morning or sunset, and if you're here between September and November, several are genuinely famous for silver grass (eok-sae) rippling across their slopes.</p>
         <p><strong>Yongnuni Oreum</strong> (near Seongsan): named for its dragon-like shape, a gentle 30-minute climb with sunrise and sunset views plus a clear look at Seongsan Ilchulbong itself, an easy add-on if you're already out that way.</p>
         <p><strong>Saebyeol Oreum</strong> (near Aewol, close to Dochidol Ranch below): one of the most popular for its autumn silver grass and sunset views over Hallasan and Biyangdo Island, a steeper but short climb.</p>
         <p><strong>Sara Oreum</strong> (off the Seongpanak trail, see Hallasan above): the island's highest oreum, and unusually has its own crater lake at the summit. Reachable as part of a Hallasan hike via Seongpanak, roughly three hours in, worth knowing about before you commit to that trail if you'd like to see it.</p>
         <p>Wear proper shoes: wooden-deck staircases and open grassland both turn slippery after rain, and there's rarely any shelter once you're on the slope.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <rect x="10" y="30" width="34" height="16" fill="#b8860b"/>
@@ -2615,13 +2781,17 @@
 <circle cx="48" cy="48" r="6" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Off-road oreum truck tours</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>If climbing an oreum on foot isn't the point for you, a guided off-road 4WD tour covers similar volcanic terrain from the driver's seat instead: horse paths, uphill and downhill trail sections, Gotjawal forest and open meadow where wild horses and deer roam, with a professional off-road driver doing the actual driving. Runs about an hour, a good option if you want the landscape without the climb, or as a change of pace from the hiking-heavy days elsewhere on this list.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M34 6 L47 18 L21 18 Z" fill="#145f60"/>
@@ -2630,13 +2800,17 @@
 <rect x="30" y="40" width="8" height="20" fill="#1f8a8c"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Cheonwangsa Temple &amp; the Hallasan forest path</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A quieter, less-visited route up Hallasan's eastern side, at the base of Gugugok ("ninety-nine valleys"). The temple sits below dense forest and dramatic rock, with the mountain's only waterfall and a mineral spring a short walk along the valley, plus a nearby forest path into Cheona Valley that's genuinely one of the better autumn foliage spots on the island. A good pick if the main Hallasan trails (above) feel too crowded or too long for the day you've got.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M0 20 Q17 12 34 20 T68 20" stroke="#1f8a8c" stroke-width="5" fill="none"/>
@@ -2645,10 +2819,13 @@
 <path d="M0 62 Q17 54 34 62 T68 62" stroke="#145f60" stroke-width="5" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>O'Sulloc Tea Museum &amp; green tea fields</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Jeju's volcanic soil genuinely suits green tea, and O'Sulloc's museum and surrounding plantation near Seogwipo is the place to see it: emerald tea fields, a tea culture exhibition, and a café serving green tea in every form. No booking needed just to walk around.</p>
         <p>For something more structured, the museum's own guided tea ceremony adds a stroll through the fields and a proper tasting session, book ahead on the museum's website rather than turning up expecting a slot.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -2658,7 +2835,8 @@
         <p>The <strong>Jeju Haenyeo Museum</strong> (Haenyeo Museum, in Gujwa-eup on the island's northeast side) is the place to see the history and equipment up close, and several coastal villages, including around Seongsan, have haenyeo-run seafood restaurants and stalls selling the day's catch straight off the boat.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <ellipse cx="38" cy="42" rx="16" ry="12" fill="#1f8a8c"/>
@@ -2668,13 +2846,17 @@
 <rect x="46" y="50" width="4" height="12" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Dochidol Ranch: alpacas up close</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A working alpaca farm in Aewol, on the island's north coast, where alpacas roam a fairly open field rather than pens, alongside ponies, sheep, goats and rabbits. Feeding is part of the entry, hand a handful of hay to an alpaca and it'll come straight over, and the on-site Experience House lends out ponchos (the traditional Peruvian garment, since that's where alpacas actually come from) free for photos.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <rect x="12" y="36" width="44" height="10" fill="#1f8a8c"/>
@@ -2683,9 +2865,12 @@
 <rect x="30" y="22" width="8" height="16" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Jeju Leports Land: go-karts, zipline, paintball</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>The island's biggest recreation complex and Korea's largest go-kart centre, all on one site: go-karting, a zipline, a water sled and paintball. For thrill-seekers this is the on-par answer to the water parks already in this guide, one stop rather than several bookings, and it doesn't need the mainland detour Everland or Lotte World would.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -2693,15 +2878,18 @@
         <p>Jeju has its own distinct horse breed, the <strong>Jeju pony</strong> (jorangmal), small, sturdy and bred for the island's terrain rather than a generic riding-school animal. <strong>Jeju Horse Park</strong> runs graded track lengths from a short 1.2km loop up to a 13km outing, while <strong>Steel Flower Ranch</strong> and similar operators offer beach riding specifically, worth seeking out over an inland arena if the coastline is the whole point for you. Beginners and children are well catered for, instructors walk alongside for the shorter courses.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <circle cx="34" cy="34" r="20" fill="#e0623f"/>
 <path d="M34 14 L34 54 M18 20 L50 48 M50 20 L18 48" stroke="#a83f27" stroke-width="2"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>What to eat</h3>
+      </div>
+      <div class="thumb-body">
+                
         <ul class="plain-list">
           <li><strong>Heuk-dwaeji</strong>: Jeju black pork, grilled.</li>
           <li><strong>Galchi-jorim</strong>: braised hairtail.</li>
@@ -2710,10 +2898,12 @@
           <li><strong>Fresh sashimi</strong>.</li>
           <li><strong>Tangerine everything</strong>: juice, desserts, even soft serve. Jeju's citrus is a genuine local speciality, not just a gift-shop gimmick.</li>
         </ul>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M16 26 L50 26 L46 54 L20 54 Z" fill="#b8860b"/>
@@ -2721,13 +2911,16 @@
 <path d="M24 18 Q28 12 24 8 M34 18 Q38 12 34 8 M44 18 Q48 12 44 8" stroke="#8a6608" stroke-width="2" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>A few Jeju cafés worth the detour</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Slowboat Atelier</strong> (Aewol): a two-storey atelier-style café built to resemble a tangerine warehouse, camera-lens windows, sea views, cats, and pastries from Abebe Bakery.</p>
         <p><strong>lavarr</strong> (Seogwipo): a three-storey former hot spring bath turned café, each floor a different interior, well-reviewed for its salted nut latte.</p>
         <p><strong>Muroi</strong> (Andeok-myeon): black-exteriored, gallery-like, dark concrete against a lush garden, known for tiramisu served in a pot.</p>
         <p><strong>Cafe Gyulkkot Darak</strong> (Seogwipo): a tangerine-themed dessert café in a 1978 stone building surrounded by a working orchard.</p>
         <p><strong>Maeum Eon</strong> (Jeju City): a small hanok tucked into a market alley, easy to walk straight past, cosy and traditional once you find the door.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -2748,7 +2941,8 @@
 
     <div class="grid-2">
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M0 48 Q17 40 34 48 T68 48 V68 H0 Z" fill="#b8860b"/>
@@ -2756,16 +2950,20 @@
 <rect x="49" y="44" width="2" height="6" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Yangyang: Surf Culture &amp; Coastal Pine Forests</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>The vibe:</strong> a once-sleepy fishing area on Gangwon-do's east coast that's quietly become Korea's eco-surf capital, without losing the raw, uncrowded feel that made it worth visiting in the first place.</p>
         <p><strong>What to see:</strong> <strong>Surfyy Beach</strong>, wide, windswept sand with a genuine surf-town scene (lessons, board rental, beach cafés), and <strong>Hajodae Pavilion</strong>, perched on a jagged cliff ringed by old pine trees, one of the quieter viewpoints on this coast.</p>
         <p>This is a slow stop rather than a sightseeing one, better suited to a day or two tacked onto an east-coast leg than a tick-box visit. If surf culture and quiet pine-backed coastline don't appeal, it's an easy one to skip.</p>
         <p><strong>Getting there:</strong> intercity bus from Seoul to the Yangyang Intercity Bus Terminal, then the local Hajodae-bound loop bus toward the beach. Rural bus schedules thin out fast and English signage is rare this far out, see the Getting Around tab before relying on the last bus back.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M10 44 L58 44 L50 56 L18 56 Z" fill="#b8860b"/>
@@ -2773,12 +2971,15 @@
 <path d="M35 20 L50 30 L35 34 Z" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Guryongpo: Historic Port &amp; Dramatic Cliffs</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>The vibe:</strong> a quiet, beautifully preserved harbour town on the peninsula's eastern tail near Pohang, industrial-meets-historic rather than polished for visitors.</p>
         <p><strong>What to see:</strong> the <strong>Guryongpo Japanese Houses Street</strong>, a preserved 1920s alleyway of dark wooden colonial-era architecture, then a short local bus out to <strong>Homigot Sunrise Square</strong>, home to the famous bronze hand sculpture rising straight out of the sea.</p>
         <p>Pairs naturally with a Gyeongju trip since Pohang is the closest transport hub, worth a half-day detour rather than a dedicated trip of its own.</p>
         <p><strong>Getting there:</strong> KTX to Pohang Station, then Bus 900 or 9000 from the transfer plaza, a scenic, bumpy 40-minute coastal ride that drops you right in front of the Japanese Houses Street.</p>
+      
       </div>
     </div>
     </div>
@@ -2793,7 +2994,8 @@
 
     <div class="grid-2">
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeaf1"/>
           <path d="M33 4 L38 4 L38 20 L33 20 Z" fill="#7a2f56"/>
@@ -2803,13 +3005,17 @@
 <rect x="19" y="60" width="30" height="4" fill="#7a2f56"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge drama">K-Drama</span>Namsan Seoul Tower</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Seen in <strong>My Love From the Star</strong> and <strong>Boys Over Flowers</strong>. Famous for the love-lock fences on the tower deck. Pairs easily with a Bukchon/palace day since it's a short cable car or taxi from central Seoul.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeaf1"/>
           <path d="M6 40 L34 18 L62 40 Z" fill="#7a2f56"/>
@@ -2819,13 +3025,17 @@
 <rect x="14" y="60" width="40" height="4" fill="#7a2f56"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge drama">K-Drama</span>Bukchon Hanok Village</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Featured in <strong>Goblin</strong> and <strong>Personal Taste</strong>. Same visit as the palace/hanok stop in the Seoul tab, no detour needed.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeaf1"/>
           <path d="M12 34 C12 18 56 18 56 34 C56 50 40 44 40 50 C40 56 30 56 26 50 C14 46 12 42 12 34 Z" fill="#b3467c"/>
@@ -2834,13 +3044,17 @@
 <circle cx="44" cy="28" r="3" fill="#f2c14e"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge drama">K-Drama</span>Ihwa Mural Village</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A hillside neighbourhood near Naksan Park known for its street art and murals, a popular backdrop across multiple dramas. Steep in places, wear proper shoes.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeaf1"/>
           <path d="M0 46 Q17 38 34 46 T68 46 V68 H0 Z" fill="#b3467c"/>
@@ -2849,13 +3063,17 @@
 <rect x="39" y="34" width="3" height="10" fill="#7a2f56"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge drama">K-Drama</span>Han River parks</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Seen in <strong>Itaewon Class</strong> and <strong>It's Okay to Not Be Okay</strong>. Any of the riverside parks work, Banpo (near the rainbow bridge fountain) and Yeouido are the easiest to reach.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeaf1"/>
           <path d="M10 56 Q34 46 58 56" stroke="#7a2f56" stroke-width="4" fill="none"/>
@@ -2863,14 +3081,18 @@
 <path d="M46 36 L46 56 M46 36 L38 46 M46 36 L54 46" stroke="#b3467c" stroke-width="3"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge drama">K-Drama</span>Nami Island (day trip from Seoul)</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>The <strong>Winter Sonata</strong> filming location, reached by a short boat from Gapyeong Wharf, itself about an hour from Seoul. Look for the First Kiss glass sequoia bridge and Cheongdam Lantern Lane. Often combined with Petite France on the same day tour. Best outside peak summer heat, it's also a well-known winter destination with its own festival.</p>
         <p>For thrill-seekers: the <strong>Nami Skyline Zipwire</strong> swoops 940m across the river to the island at around 56km/h, and Gapyeong itself is home to one of the cheapest bungee jumps in the world (roughly ₩40,000), both easy add-ons to the same day trip if the boat ride alone isn't enough adrenaline.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeaf1"/>
           <rect x="6" y="40" width="14" height="16" fill="#b3467c"/>
@@ -2879,13 +3101,17 @@
 <rect x="54" y="34" width="10" height="22" fill="#7a2f56"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge drama">K-Drama</span>Gamcheon Culture Village, Busan</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>The neighbourhood that put Busan on the K-drama map, multiple productions have filmed among its pastel houses. Same stop as the Busan tab entry.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeaf1"/>
           <path d="M8 34 Q30 14 56 34 Q30 54 8 34 Z" fill="#b3467c"/>
@@ -2893,22 +3119,29 @@
 <circle cx="18" cy="30" r="2.5" fill="#7a2f56"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge drama">K-Drama</span>Jagalchi Fish Market, Busan</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A recurring backdrop in dramas and variety shows for its bustling market atmosphere. Same stop as the Busan tab entry.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeaf1"/>
           <path d="M0 40 L20 20 L34 34 L50 14 L68 40 V68 H0 Z" fill="#7a2f56"/>
 <path d="M0 52 Q17 44 34 52 T68 52 V68 H0 Z" fill="#b3467c"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge drama">K-Drama</span>Jeju Island coastline</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Jeju's volcanic cliffs and coastal roads turn up across many dramas, including <strong>Boys Over Flowers</strong> and <strong>Warm and Cozy</strong>. No single fixed spot, the appeal is the coastal drives and seaside cafés generally, so keep an eye out while you're there rather than chasing one exact location.</p>
+      
       </div>
     </div>
     </div>
@@ -2989,7 +3222,8 @@
 
     <div class="grid-2">
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <circle cx="34" cy="34" r="24" fill="#1f8a8c"/>
@@ -2998,16 +3232,20 @@
 <path d="M22 44 Q34 54 46 44" stroke="#145f60" stroke-width="3" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Traditional performances</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>The <strong>Royal Guard Changing Ceremony</strong> at Gyeongbokgung's Gwanghwamun Gate runs daily at 10am and 2pm, free, and re-enacts 600 years of actual palace security practice.</p>
         <p><strong>Nanta</strong> is Seoul's best-known ticketed show, a non-verbal percussion performance set in a kitchen, blending samulnori rhythm with comedy (Myeongdong/Hongdae venues).</p>
         <p>The <strong>National Jeongdong Theater</strong>'s GWANGDAE repertoire covers pansori, samulnori and royal court dance with English subtitles.</p>
         <p>The <strong>National Gugak Center</strong>'s Saturday afternoon performance (3pm, most weeks) is aimed specifically at introducing traditional Korean music and dance to foreign visitors, a good low-key way in if you've never seen gugak before.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <rect x="10" y="10" width="48" height="48" rx="2" fill="none" stroke="#145f60" stroke-width="4"/>
@@ -3015,15 +3253,19 @@
 <circle cx="22" cy="20" r="4" fill="#1f8a8c"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Art museums &amp; galleries</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>The <strong>Leeum Museum of Art</strong> (Hannam-dong, Samsung-owned) is the standout: three buildings by Mario Botta, Jean Nouvel and Rem Koolhaas, one wing of traditional Korean art including national treasures, the other contemporary and international.</p>
         <p>The <strong>National Museum of Korea</strong> is the big historical collection if you want the full sweep.</p>
         <p>The <strong>Seoul Museum of Art</strong> (SeMA) covers local and international contemporary work.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <rect x="10" y="10" width="48" height="48" rx="2" fill="none" stroke="#8a6608" stroke-width="4"/>
@@ -3031,10 +3273,13 @@
 <circle cx="22" cy="20" r="4" fill="#b8860b"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Galleries off the main path</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Samcheongdong</strong> and <strong>Insadong</strong>, both walkable from Bukchon, hide a genuine gallery scene behind the main tourist strip.</p>
         <p><strong>Gallery Hyundai</strong> and the <strong>Daelim Museum</strong> (photography and design, smaller and quieter than the big institutions) are the two most worth seeking out deliberately rather than stumbling into.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -3047,7 +3292,8 @@
         <p>This is the genuine equivalent of a jade or silk factory visit elsewhere in Asia: watch the craft, try it yourself, buy directly from the person who made it rather than a shop mark-up. Worth a full day trip from Seoul rather than trying to bolt it onto something else.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M34 8 C20 8 20 24 34 24 C48 24 48 8 34 8 Z" fill="#1f8a8c"/>
@@ -3055,21 +3301,27 @@
 <ellipse cx="34" cy="48" rx="22" ry="6" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Huwon, the Secret Garden (Changdeokgung)</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A UNESCO-listed rear garden behind Changdeokgung Palace, pavilions, ponds and old trees laid out for the royal family's private use. It's ticketed separately from the main palace and only accessible on a timed guided tour with limited daily capacity, book ahead rather than turning up expecting to walk straight in.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M34 50 C20 50 14 36 34 30 C54 36 48 50 34 50 Z" fill="#b8860b"/>
 <path d="M34 30 C28 22 40 22 34 30" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Quieter parks, gardens &amp; temples (when you need a breather)</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Seoul Forest</strong> blends parkland with art installations and a small deer enclosure, popular with locals but well below palace-level tourist traffic.</p>
         <p><strong>Seoul Botanic Park</strong> (opened 2019, in Magok) is quiet most of the time despite a genuinely large lake and wetland area, one of the least-visited proper sights in the city.</p>
         <p><strong>Namsan Outdoor Botanical Garden</strong>, tucked into the Namsan hillside, is a quiet run of seasonal flowers and walking paths that feels far removed from the cable car queues nearby.</p>
@@ -3079,6 +3331,7 @@
         <p><strong>Seongbukdong</strong> pairs traditional hanok streets with a genuine gallery-and-walking-trail scene, worth an afternoon if Bukchon felt too crowded to properly enjoy.</p>
         <p>For a quieter coastal alternative to Busan or Jeju's main circuits, see Yangyang and Guryongpo in the Hidden Coastal Gems tab.</p>
         <div class="traveller-note"><span class="tn-label">📝 Traveller's Note</span><p>I always build in time to just stop, find some grass, and do nothing in particular. Somewhere on this list is where I'd go looking for that: not another sight to tick off, just space to let the trip catch up with me before I keep going.</p></div>
+      
       </div>
     </div>
     </div>
@@ -3093,22 +3346,27 @@
 
     <div class="grid-2">
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M16 26 L52 26 L48 60 L20 60 Z" fill="#1f8a8c"/>
 <path d="M26 26 C26 14 42 14 42 26" stroke="#145f60" stroke-width="4" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Department stores worth it for the experience</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>The Hyundai Seoul</strong> (Yeouido) is less a shop and more an attraction: a 3,300m² indoor park with real grass and around 30 real trees on the fifth floor, plus a 12-metre indoor waterfall cascading through the main atrium. Genuinely worth visiting even with zero shopping intent.</p>
         <p><strong>Shinsegae Centum City</strong> in Busan is, per Guinness World Records, the largest department store on Earth, nearly 700 stores across 16 floors, plus a golf driving range, ice rink, cinema, art gallery and a jjimjilbang spa (Spa Land) inside the same building.</p>
         <p>Both are as much sightseeing as shopping.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <rect x="10" y="30" width="48" height="28" fill="#1f8a8c"/>
@@ -3116,16 +3374,20 @@
 <rect x="28" y="40" width="12" height="18" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Iconic shopping streets</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Myeongdong</strong> (Seoul tab) remains the default for cosmetics and mainstream fashion.</p>
         <p><strong>Garosu-gil</strong> in Gangnam is the boutique, tree-lined equivalent for higher-end browsing.</p>
         <p>The street around <strong>Ewha Womans University</strong> has younger, more affordable fashion aimed at students.</p>
         <p><strong>Dongdaemun</strong> runs enormous wholesale fashion complexes, some genuinely open 24 hours, alongside the Zaha Hadid-designed <strong>Dongdaemun Design Plaza</strong> (DDP), which hosts Seoul Fashion Week and rotating design exhibitions even if wholesale fashion isn't your thing.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <rect x="10" y="34" width="18" height="18" fill="#b8860b"/>
@@ -3133,15 +3395,19 @@
 <rect x="52" y="30" width="12" height="22" fill="#b8860b"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Seongsu-dong &amp; Yeonnam-dong: the design districts</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Seongsu-dong</strong>, nicknamed "the Brooklyn of Seoul", is a former shoe-factory and printing district turned warehouse-cafe and indie-fashion hub, brand pop-ups rotate every 2-4 weeks so it never looks the same twice (also covered in K-Pop for its SM Entertainment building).</p>
         <p><strong>Yeonnam-dong</strong>, just off Hongdae, has a quieter, more residential indie boutique scene, <strong>Gentle Monster</strong>'s flagship store (striking minimalist eyewear/fashion) is the best-known anchor.</p>
         <p>Both reward wandering more than a fixed itinerary.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <path d="M24 20 L44 20 L38 34 L30 34 Z" fill="#b8860b"/>
@@ -3149,26 +3415,33 @@
 <ellipse cx="34" cy="54" rx="14" ry="4" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>Flea &amp; antique markets</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Dongmyo Flea Market</strong>, around 600 stalls near Dongmyo Shrine, is Seoul's biggest vintage/secondhand market, genuinely popular with locals for vintage clothing and odd finds, not really set up for tourists.</p>
         <p>The nearby <strong>Seoul Folk Flea Market</strong> (Sinseol-dong Station) leans further into antiques, retro Korean collectibles and true secondhand goods, open 10am-7pm.</p>
         <p>Both are the closest thing to a proper rummage in this guide.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <rect x="26" y="20" width="16" height="34" rx="4" fill="#1f8a8c"/>
 <rect x="30" y="10" width="8" height="12" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>K-beauty: where to shop it</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Olive Young</strong> is the dominant K-beauty retail chain, several branches within a few streets of each other in Myeongdong or Hongdae alone, plus outposts in Incheon Airport. It's the one-stop shop for skincare, make-up and the sheet masks Korea is famous for, usually far cheaper here than the same brands sold abroad.</p>
         <p><strong>Myeongdong</strong> is still the highest-density strip for both mainstream and indie K-beauty brands, and expect street promoters handing out free sheet-mask samples, a genuine Myeongdong tradition rather than a hard sell.</p>
         <p>Cushion foundation and BB cream both originated in Korea and the shelves reflect it, alongside ingredient trends like centella asiatica, snail mucin and the dewy "glass skin" finish. Tax-refund rules for purchases over the threshold work the same as any other shopping, see "Cash, ATMs &amp; getting a tax refund" in Before You Go.</p>
+      
       </div>
     </div>
     </div>
@@ -3185,7 +3458,8 @@
 
     <div class="grid-2">
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <path d="M8 58 L20 40 L30 50 L42 28 L54 58" stroke="#1f8a8c" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3193,10 +3467,13 @@
 <circle cx="42" cy="28" r="3.5" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Sports Monster</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Sports Monster</strong> is Korea's largest indoor sports theme park, tucked inside Starfield malls in Goyang, Hanam, Daejeon and Anseong.</p>
         <p>An unassuming entrance opens into a huge indoor activity park: rock climbing, high ropes, a flying fox zipline, a jumping tower, trampolines, archery, basketball/volleyball courts, darts, and a VR baseball pitching game, all under one roof. Entry runs from around ₩17,000-30,000 for one to two hours.</p>
+      
       </div>
     </div>
       <div class="card">
@@ -3219,7 +3496,8 @@
         <p>Both are genuinely easy to join even with minimal Korean, the counting is the whole game.</p>
       </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <rect x="10" y="28" width="48" height="20" rx="10" fill="#b8860b"/>
@@ -3229,13 +3507,17 @@
 <rect x="23" y="31" width="2.5" height="8" fill="#8a6608"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge gem">Hidden Gem</span>PC bangs: gaming cafe culture</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>A PC bang (PC방) is a 24-hour gaming cafe, high-spec computers, food and drink ordered from your seat and delivered to your desk, over 18,000 of them nationwide, most densely in Seoul. Not just for hardcore gamers, cheap (a couple of pounds an hour), genuinely used socially, and an easy way to see a very ordinary slice of Korean daily life rather than a tourist-facing version of it.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <rect x="20" y="30" width="28" height="24" rx="4" fill="#1f8a8c"/>
@@ -3243,13 +3525,17 @@
 <circle cx="34" cy="42" r="4" fill="#145f60"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>Escape rooms</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Korea takes escape rooms seriously, Seoul's scene is dense and well-reviewed, with a growing number of English-language rooms aimed specifically at foreign visitors, concentrated in Hongdae. A good rainy-afternoon or evening option that isn't a bar.</p>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#fbeee8"/>
           <rect x="14" y="28" width="16" height="26" rx="3" fill="#e0623f"/>
@@ -3257,16 +3543,20 @@
 <path d="M40 54 Q36 34 48 24 Q56 30 50 44 Q56 48 52 56 Z" fill="#a83f27"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge food">Food</span>Han River after dark: chimaek &amp; the fountain bridge</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p><strong>Chimaek</strong> (chicken + maekju/beer) delivered straight to a picnic blanket by the Han River is a genuine slice of Korean life, not just a K-drama trope.</p>
         <p>Yeouido, Ttukseom, Banpo and Mangwon parks have marked "Delivery Zones" (배달존), order from an app, a scooter rider finds your exact zone and calls you within 30-40 minutes. It isn't limited to chicken either, pizza, coffee and pretty much anything else on the app works the same way, see the Baemin entry in Before You Go for how this actually works for visitors.</p>
         <p>Pair it with the <strong>Banpo Bridge Rainbow Fountain</strong> (April-October, several 20-minute shows nightly, typically 7:30pm, 8pm, 8:30pm and 9pm, check the current schedule), the world's longest bridge fountain, lit and choreographed after dark.</p>
         <div class="traveller-note"><span class="tn-label">📝 Traveller's Note</span><p>This is genuinely one of the evenings I'm most looking forward to: a picnic blanket, a delivery order, and watching the fountain lights come on as the city gets dark. Wonderfully ordinary, and exactly the point.</p></div>
+      
       </div>
     </div>
       <div class="card thumb">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#eaf3f5"/>
           <circle cx="34" cy="34" r="22" fill="#1f8a8c"/>
@@ -3274,11 +3564,14 @@
 <path d="M48 18 Q34 30 48 50" stroke="#145f60" stroke-width="2" fill="none"/>
         </svg>
       </div>
-      <div class="thumb-body">
         <h3><span class="badge sight">Sight</span>KBO baseball: the loudest cheap night out in Seoul</h3>
+      </div>
+      <div class="thumb-body">
+                
         <p>Korean baseball crowds sing, chant and dance for nine innings straight, led by cheerleaders and a team-specific chant book, it's as much a live show as a sports match, and one of the most-recommended genuine local nights out going.</p>
         <p><strong>Jamsil Baseball Stadium</strong> (Sports Complex Station, Line 2) is the historic home of rivals LG Twins and Doosan Bears, loud and old-school, worth catching before it's demolished at the end of the 2026 season. <strong>Gocheok Sky Dome</strong>, Korea's only domed stadium, is the rainy-day or midsummer alternative, home to the Kiwoom Heroes, tickets run 20-30% higher than open-air stadiums for the roof.</p>
         <p>The season runs late March to September. Buy through <strong>Ticketlink Global</strong> or <strong>Interpark Global</strong> (both take foreign cards), tickets roughly ₩12,000-70,000 depending on seat, bring your passport.</p>
+      
       </div>
     </div>
     </div>
@@ -3510,7 +3803,8 @@
     </div>
 
     <div class="card thumb" style="margin-top:8px;">
-      <div class="thumb-icon">
+      <div class="thumb-header">
+        <div class="thumb-icon">
         <svg viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
           <rect width="68" height="68" fill="#faf3e0"/>
           <rect x="8" y="22" width="52" height="26" rx="4" fill="#b8860b"/>
@@ -3520,8 +3814,10 @@
 <circle cx="48" cy="50" r="5" fill="#8a6608"/>
         </svg>
       </div>
+        <h3><span class="badge gem">Hidden Gem</span>Rural buses: the "wild" village network (Nong-eo-chon)</h3>
+      </div>
       <div class="thumb-body">
-      <h3><span class="badge gem">Hidden Gem</span>Rural buses: the "wild" village network (Nong-eo-chon)</h3>
+              
       <p>Once you're off the subway and KTX network, in Yangyang, Guryongpo or anywhere similarly rural, you're in farming-and-fishing village bus territory (see Hidden Coastal Gems). Completely safe and legal, but a different set of rules: drivers move fast, routes shift without notice, and English signage is virtually non-existent.</p>
       <p><strong>The phone trick:</strong> destination signs on the bus front are Hangul-only. Type your destination into <strong>Papago</strong> (see Before You Go) in large font and show it to the driver as you board.</p>
       <p><strong>Wave to stop:</strong> rural stops are often just unmarked gravel patches on the roadside. The bus will speed past unless you physically stand at the road's edge and wave.</p>
@@ -3533,7 +3829,8 @@
         <li><strong>"Please tell me when we arrive at [Place]."</strong> → [Place]에 도착하면 알려주세요.</li>
         <li><strong>"Please stop here."</strong> → 여기서 내려주세요.</li>
       </ul>
-    </div>
+    
+      </div>
     </div>
 
     <hr class="divider">
