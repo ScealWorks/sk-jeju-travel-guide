@@ -4599,7 +4599,7 @@
       }
     }
 
-    var headings = document.querySelectorAll('.tab-panel .card > h3');
+    var headings = document.querySelectorAll('.tab-panel .card > h3, .tab-panel .card.thumb .thumb-header > h3');
     headings.forEach(function (h3) {
       var id = uniqueId(slugify(headingText(h3)));
       h3.id = id;
