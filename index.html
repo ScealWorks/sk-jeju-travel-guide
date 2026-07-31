@@ -167,6 +167,16 @@
     border: 1px solid var(--line);
   }
 
+  .card:has(.badge.sight) { border-left: 4px solid var(--sight); }
+  .card:has(.badge.food) { border-left: 4px solid var(--food); }
+  .card:has(.badge.culture) { border-left: 4px solid var(--culture); }
+  .card:has(.badge.practical) { border-left: 4px solid var(--practical); }
+  .card:has(.badge.app) { border-left: 4px solid var(--app); }
+  .card:has(.badge.drama) { border-left: 4px solid var(--drama); }
+  .card:has(.badge.kpop) { border-left: 4px solid var(--kpop); }
+  .card:has(.badge.emergency) { border-left: 4px solid var(--emergency); }
+  .card:has(.badge.gem) { border-left: 4px solid var(--gem); }
+
   .card h3 {
     margin: 0 0 8px;
     font-size: 1.05rem;
@@ -184,22 +194,25 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    padding: 3px 9px;
-    border-radius: 999px;
-    color: #fff;
+    padding: 3px 10px 3px 8px;
+    border-radius: 6px;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--ink-soft);
     margin-right: 6px;
     white-space: nowrap;
   }
 
-  .badge.sight { background: var(--sight); }
-  .badge.food { background: var(--food); }
-  .badge.culture { background: var(--culture); }
-  .badge.practical { background: var(--practical); }
-  .badge.app { background: var(--app); }
-  .badge.drama { background: var(--drama); }
-  .badge.kpop { background: var(--kpop); }
-  .badge.emergency { background: var(--emergency); }
-  .badge.gem { background: var(--gem); }
+  .badge.sight { border-left-color: #1b81a3; }
+  .badge.food { border-left-color: var(--food); }
+  .badge.culture { border-left-color: var(--culture); }
+  .badge.practical { border-left-color: var(--practical); }
+  .badge.app { border-left-color: var(--app); }
+  .badge.drama { border-left-color: var(--drama); }
+  .badge.kpop { border-left-color: var(--kpop); }
+  .badge.emergency { border-left-color: var(--emergency); }
+  .badge.gem { border-left-color: var(--gem); }
 
   .card.thumb .thumb-header {
     display: flex;
