@@ -958,34 +958,18 @@
   .jump-tabs-btn.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
   .jump-tabs-btn:hover { background: var(--navy-light); }
 
-  .callout {
-    border-left: 4px solid var(--gold);
-    background: #fdf6e6;
-    padding: 12px 14px;
-    border-radius: 8px;
-    font-size: 0.88rem;
-    margin: 14px 0;
-  }
-
-  .callout.warn {
-    border-left-color: var(--coral);
-    background: #fdece5;
-  }
-
   .traveller-note {
-    margin-top: 12px;
-    padding: 10px 12px;
-    border-left: 3px dashed var(--tnote);
+    margin: 14px 0;
+    padding: 12px 14px;
+    border: 2px solid var(--tnote);
     background: var(--tnote-bg);
     border-radius: 8px;
     font-size: 0.88rem;
-    font-style: italic;
     color: var(--ink);
   }
 
   .traveller-note .tn-label {
     display: block;
-    font-style: normal;
     font-weight: 700;
     color: var(--tnote);
     margin-bottom: 4px;
@@ -995,6 +979,37 @@
 
   .traveller-note p {
     margin: 0;
+  }
+
+  .box-notice {
+    margin: 14px 0;
+    padding: 12px 14px;
+    border: 2px solid var(--coral);
+    background: var(--paper);
+    border-radius: 8px;
+    font-size: 0.88rem;
+    color: var(--ink);
+  }
+
+  .box-notice .notice-label {
+    display: block;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+  }
+
+  .box-notice p {
+    margin: 0;
+  }
+
+  .filter-empty {
+    border-left: 4px solid var(--gold);
+    background: #fdf6e6;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 0.88rem;
   }
 
   .divider {
@@ -1126,7 +1141,7 @@
       <button data-filter="emergency">Emergency</button>
       <button data-filter="gem">Hidden Gem</button>
     </div>
-    <p class="callout filter-empty" id="filterEmpty">No matches in this section for that filter. Try another tab or clear the filter.</p>
+    <p class="filter-empty" id="filterEmpty">No matches in this section for that filter. Try another tab or clear the filter.</p>
   </div>
 </div>
 </div>
@@ -1141,7 +1156,7 @@
     <img class="hero-img" src="https://images.unsplash.com/photo-1762267616547-6d6cd4adabc3?auto=format&fit=crop&w=1200&h=420&crop=focalpoint&fp-x=0.5&fp-y=0.7&q=70" srcset="https://images.unsplash.com/photo-1762267616547-6d6cd4adabc3?auto=format&fit=crop&w=480&h=168&crop=focalpoint&fp-x=0.5&fp-y=0.7&q=70 480w, https://images.unsplash.com/photo-1762267616547-6d6cd4adabc3?auto=format&fit=crop&w=800&h=280&crop=focalpoint&fp-x=0.5&fp-y=0.7&q=70 800w, https://images.unsplash.com/photo-1762267616547-6d6cd4adabc3?auto=format&fit=crop&w=1200&h=420&crop=focalpoint&fp-x=0.5&fp-y=0.7&q=70 1200w" sizes="(max-width: 920px) 100vw, 920px" alt="Visitors in hanbok at Gyeongbokgung Palace, Seoul" loading="lazy">
     <p class="hero-img-caption">Gyeongbokgung Palace, Seoul, hanbok rental in full swing. Photo via Unsplash.</p>
 
-    <div class="callout">Written from a UK traveller's perspective: prices convert to GBP, entry rules assume a UK passport, and comparisons (TfL, Tesco Express, Network Rail and the like) are UK reference points. Everything else, apps, etiquette, sights, transport, works whichever passport you're travelling on.</div>
+    <div class="box-notice"><span class="notice-label">NOTICE</span><p>Written from a UK traveller's perspective: prices convert to GBP, entry rules assume a UK passport, and comparisons (TfL, Tesco Express, Network Rail and the like) are UK reference points. Everything else, apps, etiquette, sights, transport, works whichever passport you're travelling on.</p></div>
 
     <div class="legend">
       <div><span class="badge sight">Sight</span> worth building time around</div>
@@ -1320,8 +1335,9 @@
         </div>
       </div>
 
-      <div class="callout" style="margin-top:16px;">
-        <strong>Two ecosystems, not eight separate apps.</strong> KakaoTalk, KakaoMap and Kakao T all run on one Kakao account, and Kakao Pay (in-store QR payments) sits on that same login once you have it. Naver Map and Papago run on one Naver account the same way, with Naver Pay on top, and 2026 updates made both noticeably more tourist-friendly: Kakao and Naver signups no longer strictly need a Korean phone number, and Naver added passport verification plus wider overseas card acceptance for Naver Pay specifically. Worth setting up one Kakao account and one Naver account properly before you fly, rather than using each app as an anonymous guest, that's what actually unlocks the payment and booking features, not just the maps and translation. T-money works on a similar principle of its own: one card or Apple Wallet entry, not tied to Kakao or Naver, covers subway, bus, some taxis and convenience stores nationwide.
+      <div class="traveller-note" style="margin-top:16px;">
+        <span class="tn-label">LOCAL TIP</span>
+        <p><strong>Two ecosystems, not eight separate apps.</strong> KakaoTalk, KakaoMap and Kakao T all run on one Kakao account, and Kakao Pay (in-store QR payments) sits on that same login once you have it. Naver Map and Papago run on one Naver account the same way, with Naver Pay on top, and 2026 updates made both noticeably more tourist-friendly: Kakao and Naver signups no longer strictly need a Korean phone number, and Naver added passport verification plus wider overseas card acceptance for Naver Pay specifically. Worth setting up one Kakao account and one Naver account properly before you fly, rather than using each app as an anonymous guest, that's what actually unlocks the payment and booking features, not just the maps and translation. T-money works on a similar principle of its own: one card or Apple Wallet entry, not tied to Kakao or Naver, covers subway, bus, some taxis and convenience stores nationwide.</p>
       </div>
     </div>
 
@@ -2211,7 +2227,7 @@
         <p>No sleeveless tops, no shorts or skirts, no sandals, nothing military-style or bearing flags/national symbols. This is enforced, not a suggestion.</p>
       </div>
     </div>
-    <div class="callout">Book through a known platform (Klook and similar are commonly used) and check reviews from the last month or two, JSA access rules shift with little notice.</div>
+    <div class="box-notice"><span class="notice-label">NOTICE</span><p>Book through a known platform (Klook and similar are commonly used) and check reviews from the last month or two, JSA access rules shift with little notice.</p></div>
   </section>
 
   <!-- GYEONGJU -->
@@ -3148,7 +3164,7 @@
     </div>
     </div>
 
-    <div class="callout">Filming-location tours (Klook and similar platforms list several) exist for Seoul, Busan and Nami Island specifically if you'd rather have it planned out than self-navigate.</div>
+    <div class="traveller-note"><span class="tn-label">LOCAL TIP</span><p>Filming-location tours (Klook and similar platforms list several) exist for Seoul, Busan and Nami Island specifically if you'd rather have it planned out than self-navigate.</p></div>
   </section>
 
   <!-- K-POP -->
@@ -3212,7 +3228,7 @@
       </div>
     </div>
 
-    <div class="callout warn">Music show tickets and agency pop-up locations shift often, confirm current status on the platform you're booking through (Klook, the KBS SSO site, official agency socials) shortly before you travel rather than relying on this alone.</div>
+    <div class="box-notice"><span class="notice-label">NOTICE</span><p>Music show tickets and agency pop-up locations shift often, confirm current status on the platform you're booking through (Klook, the KBS SSO site, official agency socials) shortly before you travel rather than relying on this alone.</p></div>
   </section>
 
   <!-- ARTS & HERITAGE -->
@@ -3448,7 +3464,7 @@
     </div>
     </div>
 
-    <div class="callout">Spent over the tax-refund threshold at a participating store? See "Cash, ATMs &amp; getting a tax refund" in Before You Go, don't leave that money on the table.</div>
+    <div class="box-notice"><span class="notice-label">NOTICE</span><p>Spent over the tax-refund threshold at a participating store? See "Cash, ATMs &amp; getting a tax refund" in Before You Go, don't leave that money on the table.</p></div>
   </section>
 
   <!-- ENTERTAINMENT & NIGHTLIFE -->
@@ -3636,7 +3652,7 @@
       </div>
     </div>
 
-    <div class="callout">Papago's camera translation covers anything not on this list, point it at a menu, sign, or form and it overlays English on the spot.</div>
+    <div class="traveller-note"><span class="tn-label">LOCAL TIP</span><p>Papago's camera translation covers anything not on this list, point it at a menu, sign, or form and it overlays English on the spot.</p></div>
   </section>
 
   <!-- EMERGENCY & HEALTH -->
@@ -3855,7 +3871,7 @@
     <h2 class="section-title">🧳 Plan Your Trip <span class="read-time">1 min read</span></h2>
     <p class="section-sub">Pick a location, choose full or half day, tick what you fancy, and build up a day-by-day plan. It saves itself in this browser as you go, no account or internet needed.</p>
 
-    <div class="callout">This saves locally on whichever device you're using right now, it won't automatically appear on your other device. Use <strong>Copy itinerary as text</strong> below to paste your plan into a note, email, or message to carry it across to your phone or laptop.</div>
+    <div class="traveller-note"><span class="tn-label">LOCAL TIP</span><p>This saves locally on whichever device you're using right now, it won't automatically appear on your other device. Use <strong>Copy itinerary as text</strong> below to paste your plan into a note, email, or message to carry it across to your phone or laptop.</p></div>
 
     <div class="grid-2">
       <div class="card">
